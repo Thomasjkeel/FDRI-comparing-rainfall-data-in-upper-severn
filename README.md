@@ -11,8 +11,9 @@ Selection of notebooks comparing gauged rainfall data to gridded rainfall produc
 *Dashed-lines represent flood dates*
 <img src="figures/monthly_mean_carreg_wen_rainfall_diff.png" width="800">
 
-
-### Comparison of cumulative rainfall at Carreg Wen before flood
+### Severn-wide flood events at Carreg Wen
 <img src="figures/flood_comparison_line.png" width="800">
 
+##### Cumalative rainfall
+*including the sum of rain 10-0 days before the event*
 <img src="figures/flood_comparison_heatmap.png" width="800">
