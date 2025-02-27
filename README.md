@@ -21,8 +21,6 @@ Selection of notebooks comparing gauged rainfall data to gridded rainfall produc
 
 #### Nearby rain gauges
 There are not many rain gauges active near Carreg-wen
-<img src="figures/flood_comparison_line_nearbygauges.png" width="800">
-
 <img src="figures/flood_comparison_line_nearbygauges_w_grid.png" width="800">
 
 <img src="figures/flood_comparison_line_nearbygauges_w_grid_nearby.png" width="800">
