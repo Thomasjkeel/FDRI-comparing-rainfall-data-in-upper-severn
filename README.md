@@ -17,3 +17,12 @@ Selection of notebooks comparing gauged rainfall data to gridded rainfall produc
 #### Cumalative rainfall
 *including the sum of rain 10-0 days before the event*
 <img src="figures/flood_comparison_heatmap.png" width="800">
+
+
+#### Nearby rain gauges
+There are not many rain gauges active near Carreg-wen
+<img src="figures/flood_comparison_line_nearbygauges.png" width="800">
+
+<img src="figures/flood_comparison_line_nearbygauges_w_grid.png" width="800">
+
+<img src="figures/flood_comparison_line_nearbygauges_w_grid_nearby.png" width="800">
