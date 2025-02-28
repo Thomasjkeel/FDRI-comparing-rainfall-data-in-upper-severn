@@ -16,7 +16,7 @@ Selection of notebooks comparing gauged rainfall data to gridded rainfall produc
 
 ### Cumalative rainfall
 *including the sum of rain 10-0 days before the event*
-<img src="figures/flood_comparison_heatmap.png" width="600">
+<img src="figures/flood_comparison_heatmap_percentage_difference.png" width="600">
 
 
 ### Nearby rain gauges
