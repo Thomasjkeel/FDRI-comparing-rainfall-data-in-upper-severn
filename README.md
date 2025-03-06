@@ -4,7 +4,7 @@ Project comparing rainfall estimates in the Upper Severn using rain gauges and g
 This work was carried out as part of the [Floods and Droughts Research Infrastructure](https://fdri.org.uk/) (FDRI) project led by the UK Centre for Ecology & Hydrology.
 
 ### The Upper Severn
-![Upper Severn Catchments](./figures/upper_severn_catchments.png)
+<img src="figures/upper_severn_catchments.png" width="600">
 
 
 ## Factors contributing to differences between CEH-GEAR & HadUK-Grid
