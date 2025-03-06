@@ -11,9 +11,8 @@ We examine three catchments towards the source of the River Severn:  [Abermule](
 
 ## Factors contributing to differences between CEH-GEAR & HadUK-Grid
 ### Reduction in daily rain gauges in Upper Severn
-In the 1980s there used to be more rain gauges in the Upper Severn.
-
-Red circles represent daily rain gauges around the Abermule catchment.
+In the 1980s there used to be more rain gauges in the Upper Severn (see figure below):
+*Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
 
 ### Gridding methods
