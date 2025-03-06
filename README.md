@@ -4,15 +4,16 @@ Example notebooks comparing rainfall estimates in the Upper Severn using rain ga
 This work was carried out as part of the [Floods and Droughts Research Infrastructure](https://fdri.org.uk/) (FDRI) project led by the UK Centre for Ecology & Hydrology.
 
 ## Factors contributing to differences between CEH-GEAR & HadUK-Grid
-Interpolation methods
+### Interpolation methods
 [Figure showing IDW vs Natural Neighbour]
 
-## Monthly rainfall at Carreg Wen
+### Quality control procedures on the inclusion of rain gauges data
+Figure below compares annual differences in mean rainfall between CEH-GEAR and HadUK. Positive (red) values represent higher rainfall in CEH-GEAR than HadUK-Grid.
+![til](./figures/abermule_annual_differences_w_gauge_changes.gif)
+
 ### Cumulative rainfall comparing gauged and gridded rainfall over Carreg Wen
 *Dashed-lines represent flood dates*
 <img src="figures/monthly_carreg_wen_rainfall.png" width="600">
-
-![til](./figures/abermule_annual_differences_w_gauge_changes.gif)
 
 ### Cumulative rainfall difference from rain gauge
 *Dashed-lines represent flood dates*
