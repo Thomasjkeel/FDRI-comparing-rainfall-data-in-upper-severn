@@ -56,9 +56,11 @@ Weak negative correlation shown.
 <img src="figures/ceh_vs_haduk_differences/abermule_rainfall_vs_mindist_scatter.png" width="700">
 
 # Influence of gridded data differences during floods
+We examine 5 major Severn-wide high flow events (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).
 TODO...
+<img src="figures/carreg_wen_gauge_vs_grid/flood_comparison_line.png" width="700">
 
-<img src="figures/carreg_wen_gauge_vs_grid/ceh_vs_haduk_grid_vs_gauge_sum_rain_28_Sep_2000.png" width="700">
+<img src="figures/carreg_wen_gauge_vs_grid/flood_comparison_heatmap_percentage_difference.png" width="700">
 
 
 
