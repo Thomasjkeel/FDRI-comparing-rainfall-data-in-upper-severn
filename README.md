@@ -3,6 +3,10 @@ Example notebooks comparing rainfall estimates in the Upper Severn using rain ga
 
 This work was carried out as part of the [Floods and Droughts Research Infrastructure](https://fdri.org.uk/) (FDRI) project led by the UK Centre for Ecology & Hydrology.
 
+### The Upper Severn
+![Upper Severn Catchments](./figures/upper_severn_catchments.png)
+
+
 ## Factors contributing to differences between CEH-GEAR & HadUK-Grid
 ### Interpolation methods
 [Figure showing IDW vs Natural Neighbour]
