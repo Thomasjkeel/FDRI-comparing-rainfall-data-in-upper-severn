@@ -6,7 +6,7 @@ Project comparing rainfall estimates in the Upper Severn using rain gauges and g
 *This work was carried out as part of the [Floods and Droughts Research Infrastructure](https://fdri.org.uk/) (FDRI) project led by the UK Centre for Ecology & Hydrology.*
 
 ### The Upper Severn
-We define the Upper Severn in three catchments where the river flows at consequetively higher altitudes:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
+We examine three catchments towards the source of the River Severn:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
 <img src="figures/upper_severn_catchments.png" width="600">
 
 ## Factors contributing to differences between CEH-GEAR & HadUK-Grid
