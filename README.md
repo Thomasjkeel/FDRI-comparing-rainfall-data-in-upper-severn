@@ -33,7 +33,7 @@ Below a figure shows the differences between spatial interpolation methods (for 
 <img src="figures/fig2_from_wu_and_hung_2016.png" width="400">
 
 
-## Quality control procedures on the inclusion of rain gauges data
+<!-- ## Quality control procedures on the inclusion of rain gauges data -->
 
 # Exploring differences
 ## Methods
