@@ -7,14 +7,18 @@ This work was carried out as part of the [Floods and Droughts Research Infrastru
 <img src="figures/upper_severn_catchments.png" width="600">
 
 ## Factors contributing to differences between CEH-GEAR & HadUK-Grid
-Rain fauge data is interpolated onto a regular grid. The exact gauges which are included differ based on gridded rainfall product.
+### Reduction in daily rain gauges in Upper Severn
+In the 1980s there used to be more rain gauges in the Upper Severn.
+
+Red circles represent daily rain gauges around the Abermule catchment.
+<img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
+
+### Gridding methods
+Rain gauge data is interpolated onto a regular grid. The exact gauges which are included differ based on gridded rainfall product.
 
 Example of rain gauge data onto a regular grid:  
 <img src="figures/gridding_example_from_gdal.png" width="400">
 
-
-### Interpolation methods
-[Figure showing IDW vs Natural Neighbour]
 CEH-GEAR uses [Natural Neighbour Interpolation](https://en.wikipedia.org/wiki/Natural-neighbor_interpolation), HadUK-Grid uses [Inverse Distance Weighting](https://en.wikipedia.org/wiki/Inverse_distance_weighting).
 
 Differences will be subtle, but the choice of spatial interpolation creates uncertainty.
