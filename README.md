@@ -8,7 +8,7 @@ This work was carried out as part of the [Floods and Droughts Research Infrastru
 [Figure showing IDW vs Natural Neighbour]
 
 ### Quality control procedures on the inclusion of rain gauges data
-Figure below compares annual differences in mean rainfall between CEH-GEAR and HadUK. Positive (red) values represent higher rainfall in CEH-GEAR than HadUK-Grid.
+Figure below compares annual differences in mean rainfall between CEH-GEAR and HadUK. Positive (red) values represent higher rainfall in CEH-GEAR than HadUK-Grid. Outlines represent the Abermule (largest), Dolwen and Plynlimon Flume (smallest) catchment boundaries
 ![til](./figures/abermule_annual_differences_w_gauge_changes.gif)
 
 ### Cumulative rainfall comparing gauged and gridded rainfall over Carreg Wen
