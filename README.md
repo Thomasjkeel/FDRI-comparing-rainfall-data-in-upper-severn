@@ -29,8 +29,7 @@ Below a figure shows the differences between spatial interpolation methods (for 
 
 
 ## Quality control procedures on the inclusion of rain gauges data
-Figure below compares annual differences in mean rainfall between CEH-GEAR and HadUK. Positive (red) values represent higher rainfall in CEH-GEAR than HadUK-Grid. Outlines represent the Abermule (largest), Dolwen and Plynlimon Flume (smallest) catchment boundaries
-![til](./figures/abermule_annual_differences_w_gauge_changes.gif)
+TODO...
 
 # Exploring differences
 ## Methods
@@ -55,3 +54,11 @@ No relationship shown.
 Abermule rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge:
 Weak negative correlation shown.
 <img src="figures/ceh_vs_haduk_differences/abermule_rainfall_vs_mindist_scatter.png" width="700">
+
+# Influence of gridded data differences during floods
+
+
+
+# Other
+Figure below compares annual differences in mean rainfall between CEH-GEAR and HadUK. Positive (red) values represent higher rainfall in CEH-GEAR than HadUK-Grid. Outlines represent the Abermule (largest), Dolwen and Plynlimon Flume (smallest) catchment boundaries
+![til](./figures/abermule_annual_differences_w_gauge_changes.gif)
