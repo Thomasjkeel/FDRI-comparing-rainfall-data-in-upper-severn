@@ -49,15 +49,15 @@ Histogram of differences between CEH-Gear and HadUK in Upper Severn:
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
 Abermule rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge.
-Moderate negative correlation shown.
+Moderate negative correlation shown.  
 <img src="figures/ceh_vs_haduk_differences/abermule_rain_vs_height_scatter.png" width="700">
 
 Abermule rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge.
-No relationship shown.
+No relationship shown.  
 <img src="figures/ceh_vs_haduk_differences/abermule_height_vs_mindist_scatter.png" width="500">
 
 Abermule rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge:
-Weak negative correlation shown.
+Weak negative correlation shown.  
 <img src="figures/ceh_vs_haduk_differences/abermule_rainfall_vs_mindist_scatter.png" width="700">
 
 # Influence of gridded data differences during floods
