@@ -54,7 +54,7 @@ Moderate negative correlation shown.
 
 Abermule rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge.
 No relationship shown.
-<img src="figures/ceh_vs_haduk_differences/abermule_height_vs_mindist_scatter.png" width="700">
+<img src="figures/ceh_vs_haduk_differences/abermule_height_vs_mindist_scatter.png" width="500">
 
 Abermule rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge:
 Weak negative correlation shown.
