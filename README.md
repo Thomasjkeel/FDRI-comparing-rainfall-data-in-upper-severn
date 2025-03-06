@@ -10,7 +10,7 @@ We examine three catchments towards the source of the River Severn:  [Abermule](
 <img src="figures/upper_severn_catchments.png" width="600">
 
 ## Gridded rainfall data products
-The two main gridded rainfall products available in the UK are the CEH-GEAR and HadUK-Grid. For this project, we use daily 1km by 1km rainfall from each of these products.
+The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)). For this project, we use daily 1km by 1km rainfall from each of these products.
 
 # Factors contributing to differences between CEH-GEAR & HadUK-Grid
 ## Reduction in daily rain gauges in Upper Severn
