@@ -64,8 +64,10 @@ We examine 5 major Severn-wide high flow events (i.e. those above 95th percentil
 TODO...
 <!-- <img src="figures/carreg_wen_gauge_vs_grid/flood_comparison_line.png" width="700"> -->
 
+The rain gauge used (Carreg Wen) is data that was not included in either the CEH-GEAR or HadUK-Grid.   
 <img src="figures/carreg_wen_gauge_vs_grid/flood_comparison_heatmap_percentage_difference.png" width="700">
 
+<img src="figures/carreg_wen_gauge_vs_grid/uppersevern_flood_events_differences.png" width="700">
 
 
 # Other
