@@ -44,8 +44,8 @@ We also use a 1km by 1km height profile for the region
 <img src="figures/gauge_distance_vs_height/abermule_height_profile.png" width="500">
 
 ## Results
-Clearly there is a bias in certain regions
-<img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_by_season.png" width="700"> 
+<!-- Clearly there is a bias in certain regions
+<img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_by_season.png" width="700">  -->
 
 Histogram of differences between CEH-Gear and HadUK in Upper Severn:  
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
