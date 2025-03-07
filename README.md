@@ -50,17 +50,14 @@ We also use a 1km by 1km height profile for the region
 Histogram of differences between CEH-Gear and HadUK in Upper Severn:  
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
-Rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge.
-Moderate negative correlation shown.  
+Rainfall difference between CEH-GEAR and HadUK vs Height of rain gauge.  
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rain_vs_height_scatter.png" width="700">
 
-Height of rain gauge versus minimum distance to gauge (from CEH-GEAR).
-No relationship shown.  
-<img src="figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png" width="700">
-
-Rainfall difference between CEH-GEAR and HadUK versus minimum distance to gauge (from CEH-GEAR).
-Weak negative correlation shown.  
+Rainfall difference between CEH-GEAR and HadUK versus minimum distance to gauge (from CEH-GEAR).  
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rainfall_vs_mindist_scatter.png" width="700">
+
+Height of rain gauge versus minimum distance to gauge (from CEH-GEAR).  
+<img src="figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png" width="700">
 
 # Influence of gridded data differences during floods
 We examine 5 major Severn-wide high flow events (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).
