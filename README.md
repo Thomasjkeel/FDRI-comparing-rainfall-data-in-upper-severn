@@ -23,14 +23,14 @@ This puts more uncertainty into the rainfall estimation, and means greater diffe
 ## Gridding methods
 Rain gauge data is interpolated onto a regular grid. The exact gauges which are included differ based on gridded rainfall product.
 
-Example of rain gauge data onto a regular grid:  
-<img src="figures/gridding_example_from_gdal.png" width="400">
+<!-- Example of rain gauge data onto a regular grid:  
+<img src="figures/gridding_example_from_gdal.png" width="400"> -->
 
 CEH-GEAR uses [Natural Neighbour Interpolation](https://en.wikipedia.org/wiki/Natural-neighbor_interpolation), HadUK-Grid uses [Inverse Distance Weighting](https://en.wikipedia.org/wiki/Inverse_distance_weighting).
 
 Differences will be subtle, but the choice of spatial interpolation creates uncertainty.
 Below a figure shows the differences between spatial interpolation methods (for more see: [DOI:10.5772/65996](https://www.intechopen.com/chapters/52704)):  
-<img src="figures/fig2_from_wu_and_hung_2016.png" width="400">
+<!-- <img src="figures/fig2_from_wu_and_hung_2016.png" width="400"> -->
 
 
 <!-- ## Quality control procedures on the inclusion of rain gauges data -->
