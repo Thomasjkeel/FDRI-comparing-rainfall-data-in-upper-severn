@@ -41,7 +41,7 @@ We mask the areas around each catchment
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
 
 We also use a 1km by 1km height profile for the region
-<img src="figures/gauge_distance_vs_height/abermule_height_profile.png" width="500">
+<img src="figures/abermule_height_profile.png" width="500">
 
 ## Results
 <!-- Clearly there is a bias in certain regions
@@ -70,6 +70,6 @@ The rain gauge used (Carreg Wen) is data that was not included in either the CEH
 <img src="figures/carreg_wen_gauge_vs_grid/uppersevern_flood_events_differences.png" width="700">
 
 
-# Other
+<!-- # Other
 Figure below compares annual differences in mean rainfall between CEH-GEAR and HadUK. Positive (red) values represent higher rainfall in CEH-GEAR than HadUK-Grid. Outlines represent the Abermule (largest), Dolwen and Plynlimon Flume (smallest) catchment boundaries
-![til](./figures/abermule_annual_differences_w_gauge_changes.gif)
+![til](./figures/abermule_annual_differences_w_gauge_changes.gif) -->
