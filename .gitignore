@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Path to data file
+path_to_ceh_data.txt
+path_to_haduk_data.txt
