@@ -58,20 +58,30 @@ Height of rain gauge versus minimum distance to gauge (from CEH-GEAR).
 
 # Influence of gridded data differences during floods
 We examine 5 major Severn-wide high flow events (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).
-TODO...
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
 
+*Finding:*
+Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets
+
 ## Carreg Wen case study (using unseen data):
 The rain gauge used (Carreg Wen) is data that was not included in either the CEH-GEAR or HadUK-Grid.  
+
+Clear problems with the old Carreg Wen gauge:
+<img src="figures/carreg_wen_case_study/annual_mean_rainfall_comparison_new_gauge.png" width="700">
+
 Compare nearby grid cells with new Carreg Wen rain gauge
 <img src="figures/carreg_wen_case_study/flood_comparison_line.png">
 
-View difference from nearby gauges
+View rainfall in nearby gauges
 <img src="figures/carreg_wen_case_study/flood_comparison_line_nearbygauges_w_grid.png">
 
 Examine rainfall differences between gridded datasets and the unseen Carreg Wen gauge
 <img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference.png" width="700">
 
+*more figures available under `figures/carreg_wen_case_study`*
+
+# Findings
+- uncertainty in the Pynlimon region about how much rainfall falls during flood events (also see project examining influence of height on rainfall estimation in gridded rainfall products [here](#https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods))
 
