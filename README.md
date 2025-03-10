@@ -64,11 +64,11 @@ We examine 5 major Severn-wide high flow events (i.e. those above 95th percentil
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
 
 *Finding:*
-Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets
+Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
 
 ## Carreg Wen case study (using unseen data):
-The rain gauge used (Carreg Wen) is data that was not included in either the CEH-GEAR or HadUK-Grid.
-Location of the daily Carreg Wen gauge. It falls within the Plynlimon catchment area.  
+The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Grid.
+Location of the daily Carreg Wen gauge:  
 <img src="figures/upper_severn_floods/ceh_vs_haduk_grid_vs_gauge_flood_28_Sep_2000.png" width="700">
 
 
