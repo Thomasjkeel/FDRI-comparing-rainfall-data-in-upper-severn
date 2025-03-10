@@ -71,11 +71,12 @@ The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Gr
 Location of the daily Carreg Wen gauge:  
 <img src="figures/upper_severn_floods/ceh_vs_haduk_grid_vs_gauge_flood_28_Sep_2000.png" width="700">
 
-
-Uncertainty around data from the old Carreg Wen gauge (which ran from 1976-1988):
+Uncertainty around data from the old Carreg Wen gauge (which was included in CEH-GEAR from 1976-1988):
+*'nearby' represents the eight surrounding grid cells*
 <img src="figures/carreg_wen_case_study/annual_mean_rainfall_comparison_new_gauge.png" width="700">
 
 Compare nearby grid cells with new Carreg Wen rain gauge
+*'nearby' represents the eight surrounding grid cells*
 <img src="figures/carreg_wen_case_study/flood_comparison_line.png">
 
 View rainfall in nearby gauges
