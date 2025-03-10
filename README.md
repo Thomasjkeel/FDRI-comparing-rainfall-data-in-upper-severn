@@ -44,9 +44,6 @@ We also use a 1km by 1km height profile for the region
 <img src="figures/abermule_height_profile.png" width="500">
 
 ## Results
-<!-- Clearly there is a bias in certain regions
-<img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_by_season.png" width="700">  -->
-
 Histogram of differences between CEH-Gear and HadUK in Upper Severn:  
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
@@ -62,14 +59,19 @@ Height of rain gauge versus minimum distance to gauge (from CEH-GEAR).
 # Influence of gridded data differences during floods
 We examine 5 major Severn-wide high flow events (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).
 TODO...
-<!-- <img src="figures/carreg_wen_gauge_vs_grid/flood_comparison_line.png" width="700"> -->
+<img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
-The rain gauge used (Carreg Wen) is data that was not included in either the CEH-GEAR or HadUK-Grid.   
-<img src="figures/carreg_wen_gauge_vs_grid/flood_comparison_heatmap_percentage_difference.png" width="700">
+<img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
 
-<img src="figures/carreg_wen_gauge_vs_grid/uppersevern_flood_events_differences.png" width="700">
+## Carreg Wen case study (using unseen data):
+The rain gauge used (Carreg Wen) is data that was not included in either the CEH-GEAR or HadUK-Grid.  
+Compare nearby grid cells with new Carreg Wen rain gauge
+<img src="figures/carreg_wen_case_study/flood_comparison_line.png">
+
+View difference from nearby gauges
+<img src="figures/carreg_wen_case_study/flood_comparison_line_nearbygauges_w_grid.png">
+
+Examine rainfall differences between gridded datasets and the unseen Carreg Wen gauge
+<img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference.png" width="700">
 
 
-<!-- # Other
-Figure below compares annual differences in mean rainfall between CEH-GEAR and HadUK. Positive (red) values represent higher rainfall in CEH-GEAR than HadUK-Grid. Outlines represent the Abermule (largest), Dolwen and Plynlimon Flume (smallest) catchment boundaries
-![til](./figures/abermule_annual_differences_w_gauge_changes.gif) -->
