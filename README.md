@@ -1,13 +1,16 @@
 # FDRI-comparing-rainfall-data-in-upper-severn
+## Introduction
 Project comparing rainfall estimates in the Upper Severn using rain gauges and gridded rainfall products. 
 
 **Project Goal:** To reduce the uncertainty of rain-driven flood estimation in the upper reaches of the Severn catchment.
 
-*This work was carried out as part of the [Floods and Droughts Research Infrastructure](https://fdri.org.uk/) (FDRI) project led by the UK Centre for Ecology & Hydrology.*
+
+## **Headline Findings**
+- There is a spatial signature to the difference between CEH-GEAR and HadUK-Grid (see **Figures X, X** & **X**)
 
 ## The Upper Severn
 We examine three catchments towards the source of the River Severn:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
-<img src="figures/upper_severn_catchments.png" width="600">
+<img src="figures/upper_severn_catchments.png" width="700">
 
 ## Gridded rainfall data products
 The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)). For this project, we use daily 1km by 1km rainfall from each of these products.
@@ -15,8 +18,9 @@ The two main observation-based gridded rainfall products available for the UK ar
 # Factors contributing to differences between CEH-GEAR & HadUK-Grid
 ## Reduction in daily rain gauges in Upper Severn
 In the 1980s there used to be more rain gauges in the Upper Severn (see figure below):
-*Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*  
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
+
+*<strong>Figure X</strong> Number of gauges in the Upper Severn catchment. Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*   
 
 This puts more uncertainty into the rainfall estimation, and means greater differences are created by the exact methods used to spatially interpolate data from rain gauges to a regular grid (e.g. 1km by 1km).
 
@@ -42,24 +46,33 @@ Both datasets uses differing QC procedures, and may included different rain gaug
 - We also use a 1km by 1km height profile for the region (see figure below)  
 <img src="figures/abermule_height_profile.png" width="700">
 
+*<strong>Figure X</strong> Height profile in metres of the Upper Severn catchment*   
+
+
 ## Results
-Histogram of differences between CEH-Gear and HadUK in Upper Severn:  
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
+
+*<strong>Figure X</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn*   
 
 Clearly greater bias towards Plynlimon.  
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
 
+*<strong>Figure X</strong> caption.*   
+
+
 But there is opposing relationship between height of gauge and differences between CEH-GEAR and HadUK-Grid   
-Rainfall difference between datasets vs Height of rain gauge.  
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rain_vs_height_scatter.png" width="700">
+
+*<strong>Figure X</strong> Rainfall difference between datasets vs Height of rain gauge.*   
 
 Similarly there is no clear pattern between dataset differences and distances of a grid cell to the nearest rain gauge (see below).   
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rainfall_vs_mindist_scatter.png" width="700">
 
 *<strong>Figure X</strong> Rainfall difference between CEH-GEAR and HadUK-Grid versus minimum distance to gauge (from CEH-GEAR).*  
 
-Height of rain gauge versus minimum distance to gauge (from CEH-GEAR).  
 <img src="figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png" width="700">
+
+*<strong>Figure X</strong> Height of rain gauge versus minimum distance to gauge.*   
 
 ### Interpretation:
 - perhaps we are using too much data in one go to compare differences.
@@ -100,4 +113,7 @@ Examine rainfall differences between gridded datasets and the unseen Carreg Wen 
 
 # Further reading:
 - https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods
-- 
+
+# Endnote
+*This work was carried out as part of the [Floods and Droughts Research Infrastructure](https://fdri.org.uk/) (FDRI) project led by the UK Centre for Ecology & Hydrology.*
+
