@@ -84,19 +84,28 @@ Similarly there is no clear pattern between dataset differences and distances of
 We examine 5 major Severn-wide high flow events (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
+*<strong>Figure X</strong>*   
+
+
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
+
+*<strong>Figure X</strong>*   
 
 *Finding:*
 Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
 
 ## Carreg Wen case study (using unseen data):
-The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Grid.
-Location of the daily Carreg Wen gauge:  
+The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Grid.  
 <img src="figures/upper_severn_floods/uppersevern_flood_event_mean_difference.png" width="700">
+
+*<strong>Figure X</strong> Location of the daily Carreg Wen gauge.*   
 
 Uncertainty around data from the old Carreg Wen gauge (which was included in CEH-GEAR from 1976-1988)
 *'nearby' represents the eight surrounding grid cells*:
 <img src="figures/carreg_wen_case_study/annual_mean_rainfall_comparison_new_gauge.png" width="700">
+
+*<strong>Figure X</strong> *'nearby' represents the eight surrounding grid cells**   
+
 
 Compare nearby grid cells with new Carreg Wen rain gauge
 *'nearby' represents the eight surrounding grid cells*:  
