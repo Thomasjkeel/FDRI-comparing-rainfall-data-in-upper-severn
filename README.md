@@ -19,7 +19,7 @@ Notebooks provided in `notebooks/` detail how the analysis and figures below wer
     - [3.2. Height profile](#32-height-profile)
 - [4. Results](#4-results)  
     - [4.1. Differences between gridded datasets in Upper Severn](#41-differences-between-gridded-datasets-in-upper-severn)
-    - [4.2. Dataset uncertainty and Upper Severn floods](#42-dataset-uncertainty-and-upper-severn-floods)
+    - [4.2. Dataset uncertainty during Severn high flow events](#42-dataset-uncertainty-during-severn-high-flow-events)
     - [4.3. Carreg Wen case study](#43-carreg-wen-case-study)
 - [5. Discussion](#5-discussion) 
 
@@ -102,7 +102,7 @@ Similarly there is no clear pattern between dataset differences and distances of
 - perhaps we are using too much data in one go to compare differences.
 - there is some indication that 
 
-# 4.2 Dataset uncertainty and Upper Severn floods
+# 4.2 Dataset uncertainty during Severn high flow events
 We examine 6 major Severn-wide high flow events between 2000-2008 (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).  
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
