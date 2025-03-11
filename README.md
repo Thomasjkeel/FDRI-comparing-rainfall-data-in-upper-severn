@@ -1,6 +1,7 @@
 # FDRI-comparing-rainfall-data-in-upper-severn
 ## Introduction
-Project comparing rainfall estimates in the Upper Severn using rain gauges and gridded rainfall products. 
+Project comparing rainfall estimates in the Upper Severn using rain gauges and gridded rainfall products.  
+Notebooks provided in `notebooks/` detail how the analysis and figures below were produced
 
 **Project Goal:** To reduce the uncertainty of rain-driven flood estimation in the upper reaches of the Severn catchment.
 
@@ -8,25 +9,32 @@ Project comparing rainfall estimates in the Upper Severn using rain gauges and g
 ## **Headline Findings**
 - There is a spatial signature to the difference between CEH-GEAR and HadUK-Grid (see **Figures X, X** & **X**)
 
-## The Upper Severn
-We examine three catchments towards the source of the River Severn:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
-<img src="figures/upper_severn_catchments.png" width="700">
 
-*<strong>Figure X</strong> The three catchment used in this study of the Upper Severn*
+## Index
+- [1. Data](#1-data)  
+    - [1.1. Factors contributing to differences in gridded rainfall products](#11-factors-contributing-to-differences-between-ceh-gear--haduk-grid)
+- [2. The Upper Severn](#the-upper-severn)  
+- [3. Methods](#3-methods)  
+    - [3.1 Masking catchment](#31-catchment-masks)
+    - [3.2. Height profile](#32-height-profile)
+- [4. Results](#4-results)  
+- [7. The Upper Severn](#the-upper-severn)  
 
-## Gridded rainfall data products
-The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)). For this project, we use daily 1km by 1km rainfall from each of these products.
+# 1. Data
+**Gridded rainfall data products**  
+The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)).  
+For this project, we use daily 1km by 1km rainfall from each of these products.
 
-# Factors contributing to differences between CEH-GEAR & HadUK-Grid
-## Reduction in daily rain gauges in Upper Severn
+## 1.1 Factors contributing to differences between CEH-GEAR & HadUK-Grid
+### 1.1.1  A reduction in daily rain gauges in Upper Severn
 In the 1980s there used to be more rain gauges in the Upper Severn (see figure below):
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
 
-*<strong>Figure X</strong> Number of gauges in the Upper Severn. Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*   
+*<strong>Figure 2.</strong> Number of gauges in the Upper Severn. Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*   
 
 This puts more uncertainty into the rainfall estimation, and means greater differences are created by the exact methods used to spatially interpolate data from rain gauges to a regular grid (e.g. 1km by 1km).
 
-## Gridding methods
+### 1.1.2 Difference of methods used to grid the rain gauge data
 Rain gauge data is interpolated onto a regular grid. The exact gauges which are included differ based on gridded rainfall product.
 
 <!-- Example of rain gauge data onto a regular grid:  
@@ -38,20 +46,31 @@ Differences will be subtle, but the choice of spatial interpolation creates unce
 Below a figure shows the differences between spatial interpolation methods (for more see: [DOI:10.5772/65996](https://www.intechopen.com/chapters/52704)):  
 <!-- <img src="figures/fig2_from_wu_and_hung_2016.png" width="400"> -->
 
-
-## Quality control procedures
+### 1.1.3 Difference in quality control procedures
 Both datasets uses differing QC procedures, and may included different rain gauges at different time steps. 
 
-# Exploring differences
-## Methods
-- We mask the areas around each catchment.  
-- We also use a 1km by 1km height profile for the region (see figure below)  
+# 2. The Upper Severn
+We examine three catchments towards the source of the River Severn:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
+<img src="figures/upper_severn_catchments.png" width="700">
+
+*<strong>Figure 1.</strong> The three catchment used in this study of the Upper Severn*
+
+
+# 3. Methods
+## 3.1 Catchment masks
+We mask the areas around each catchment (see example in **Figure X**).  
+Details provided in *Section 4* of `notebooks/explore_upper_severn_flood_events.ipynb`.  
+
+## 3.2 Height profile 
+We also use a 1km by 1km height profile for the region (see figure below)  
 <img src="figures/abermule_height_profile.png" width="700">
 
-*<strong>Figure X</strong> Height profile in metres of the Upper Severn catchment*   
+*<strong>Figure 3.</strong> Height profile in metres of the Upper Severn catchment*   
 
 
-## Results
+# 4. Results
+## 4.1 Differences between
+*information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_dataset.ipynb](./notebooks/explore_differences_in_gridded_dataset.ipynb)*
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
 *<strong>Figure X</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn*   
@@ -107,15 +126,19 @@ Uncertainty around data from the old Carreg Wen gauge (which was included in CEH
 *<strong>Figure X</strong> *'nearby' represents the eight surrounding grid cells**   
 
 
-Compare nearby grid cells with new Carreg Wen rain gauge
-*'nearby' represents the eight surrounding grid cells*:  
 <img src="figures/carreg_wen_case_study/flood_comparison_line.png" width="700">
 
-View rainfall in nearby gauges  
+*<strong>Figure X</strong> Compare nearby grid cells with new Carreg Wen rain gauge.'nearby' represents the eight surrounding grid cells*   
+
 <img src="figures/carreg_wen_case_study/flood_comparison_line_nearbygauges_w_grid.png" width="700">
 
-Examine rainfall differences between gridded datasets and the unseen Carreg Wen gauge  
+*<strong>Figure X</strong> View rainfall in nearby gauges*   
+
+  
 <img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference.png" width="700">
+
+*<strong>Figure X</strong> rainfall differences between gridded datasets and the unseen Carreg Wen gauge*   
+
 
 *more figures available under `figures/carreg_wen_case_study`*
 
