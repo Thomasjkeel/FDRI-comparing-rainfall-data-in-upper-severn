@@ -12,6 +12,8 @@ Project comparing rainfall estimates in the Upper Severn using rain gauges and g
 We examine three catchments towards the source of the River Severn:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
 <img src="figures/upper_severn_catchments.png" width="700">
 
+*<strong>Figure X</strong> The three catchment used in this study of the Upper Severn*
+
 ## Gridded rainfall data products
 The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)). For this project, we use daily 1km by 1km rainfall from each of these products.
 
@@ -20,7 +22,7 @@ The two main observation-based gridded rainfall products available for the UK ar
 In the 1980s there used to be more rain gauges in the Upper Severn (see figure below):
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
 
-*<strong>Figure X</strong> Number of gauges in the Upper Severn catchment. Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*   
+*<strong>Figure X</strong> Number of gauges in the Upper Severn. Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*   
 
 This puts more uncertainty into the rainfall estimation, and means greater differences are created by the exact methods used to spatially interpolate data from rain gauges to a regular grid (e.g. 1km by 1km).
 
