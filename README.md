@@ -36,17 +36,25 @@ Downloaded from OS OpenRivers ([link](https://www.ordnancesurvey.co.uk/products/
 
 I am happy to provide any of the above data, so please email me if you would like it.  
 
-## 1.1 Factors contributing to differences between CEH-GEAR & HadUK-Grid
-### 1.1.1  A reduction in daily rain gauges in Upper Severn
+
+# 2. The Upper Severn
+We examine three catchments towards the source of the River Severn:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
+<img src="figures/upper_severn_catchments.png" width="700">
+
+*<strong>Figure 1.</strong> The three catchment used in this study of the Upper Severn*
+
+## 2.1 Factors contributing to differences between CEH-GEAR & HadUK-Grid over Upper Severn
+### 2.1.1  A reduction in daily rain gauges in Upper Severn
 In the 1980s there used to be more rain gauges in the Upper Severn (see figure below):
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
 
 *<strong>Figure 2.</strong> Number of gauges in the Upper Severn. Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product.*   
 
-This puts more uncertainty into the rainfall estimation, and means greater differences are created by the exact methods used to spatially interpolate data from rain gauges to a regular grid (e.g. 1km by 1km).
+The relationship between density of rain gauges to differences between datasets is briefly explored here.
 
-### 1.1.2 Difference of methods used to grid the rain gauge data
-Rain gauge data is interpolated onto a regular grid. The exact gauges which are included differ based on gridded rainfall product.
+### 2.1.2 Difference of methods used to grid the rain gauge data
+Rain gauge data is interpolated onto a regular grid. The exact gauges which are included differ based on gridded rainfall product.  
+The reduction in density of the rain gauge network in the Upper Severn (shown in **Figure 2**) puts more uncertainty into the rainfall estimation, and means greater differences are created by the exact methods used to spatially interpolate data from rain gauges to a regular grid (e.g. 1km by 1km).
 
 <!-- Example of rain gauge data onto a regular grid:  
 <img src="figures/gridding_example_from_gdal.png" width="400"> -->
@@ -57,14 +65,8 @@ Differences will be subtle, but the choice of spatial interpolation creates unce
 Below a figure shows the differences between spatial interpolation methods (for more see: [DOI:10.5772/65996](https://www.intechopen.com/chapters/52704)):  
 <!-- <img src="figures/fig2_from_wu_and_hung_2016.png" width="400"> -->
 
-### 1.1.3 Difference in quality control procedures
-Both datasets uses differing QC procedures, and may included different rain gauges at different time steps. 
-
-# 2. The Upper Severn
-We examine three catchments towards the source of the River Severn:  [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m). 
-<img src="figures/upper_severn_catchments.png" width="700">
-
-*<strong>Figure 1.</strong> The three catchment used in this study of the Upper Severn*
+### 2.1.3 Difference in quality control procedures
+Both datasets uses differing QC procedures, and may included different rain gauges at different time steps.   
 
 
 # 3. Methods
@@ -81,7 +83,7 @@ We also use a 1km by 1km height profile for the region (see figure below)
 
 # 4. Results
 ## 4.1 Differences between gridded datasets in Upper Severn
-*information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)*
+*Note: information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)*
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
 *<strong>Figure X</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn*   
@@ -121,6 +123,8 @@ Without Plynlimon:
 - there is some indication that 
 
 # 4.2 Dataset uncertainty during Severn high flow events
+*Note: information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_upper_severn_flood_events.ipynb)*
+
 We examine 6 major Severn-wide high flow events between 2000-2008 (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).  
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
@@ -137,6 +141,7 @@ We examine 6 major Severn-wide high flow events between 2000-2008 (i.e. those ab
 
 
 ## 4.3 Carreg Wen case study
+*Note: information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/Carreg_wen_case_study.ipynb)*
 The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Grid.  
 <img src="figures/upper_severn_floods/uppersevern_flood_event_mean_difference.png" width="700">
 
