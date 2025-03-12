@@ -111,6 +111,11 @@ Through time
 
 *<strong>Figure X</strong>*   
 
+Without Plynlimon:  
+<img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time_wo_plyn.png" width="700">
+
+*<strong>Figure X</strong>*   
+
 ### Interpretation:
 - perhaps we are using too much data in one go to compare differences.
 - there is some indication that 
