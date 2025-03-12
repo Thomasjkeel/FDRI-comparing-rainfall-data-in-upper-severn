@@ -106,6 +106,11 @@ Similarly there is no clear pattern between dataset differences and distances of
 
 *<strong>Figure X</strong> Height of rain gauge versus minimum distance to gauge.*   
 
+Through time
+<img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time.png" width="700">
+
+*<strong>Figure X</strong>*   
+
 ### Interpretation:
 - perhaps we are using too much data in one go to compare differences.
 - there is some indication that 
