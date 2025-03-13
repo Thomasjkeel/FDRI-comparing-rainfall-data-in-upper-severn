@@ -122,39 +122,38 @@ _**Figure 7** Seasonal dataset differences in the Upper Severn between 1 Jan 197
 
 Next, we examine some simple relationships between rain gauge height, gridded data differences and minimum distances to rain gauges (CEH-GEAR only).
 
-No relationship is shown between rain gauge height and rainfall differences (**Figure 8**)
+A slight negative correlation is shown between rain gauge height and rainfall differences in Abermule, but not for the other catchments (**Figure 8**). A similar pattern is shown between the minimum distance to the nearest rain gauge and rainfall differences (**Figure 9**).
+Comparison between height and min distance are shown in the [figure](figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png) (notably there is a strong positive correlations between height and min dist in Dolwen and Plynlimon only).
+
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rain_vs_height_scatter.png" width="700">
 
-_**Figure 8** Rainfall data difference vs height of rain gauge between 1 Jan 1970 & 31 Dec 2022. Height was dervied from a 1 km by 1 km profile detailed in **Section 3.2**._
+_**Figure 8** Rainfall data difference vs height of rain gauge (mean of 1 Jan 1970 to 31 Dec 2022). Height was dervied from a 1 km by 1 km profile detailed in **Section 3.2**._
 
-Similarly there is no clear pattern between dataset differences and distances of a grid cell to the nearest rain gauge (see below).  
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rainfall_vs_mindist_scatter.png" width="700">
 
-_**Figure 9** Rainfall difference between CEH-GEAR and HadUK-Grid versus minimum distance to gauge (from CEH-GEAR)._
+_**Figure 9** Rainfall data difference vs minimum distance to gauge from CEH-GEAR (mean of 1 Jan 1970 to 31 Dec 2022)._
 
-<img src="figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png" width="700">
+<!-- <img src="figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png" width="700"> -->
 
-_**Figure 10** Height of rain gauge versus minimum distance to gauge. Height was dervied from a 1 km by 1 km profile detailed in **Section 3.2**._
+<!-- _**Figure 10** Height of rain gauge vs minimum distance to gauge (mean of 1 Jan 1970 to 31 Dec 2022). Height was dervied from a 1 km by 1 km profile detailed in **Section 3.2**._ -->
 
-Through time  
+#### 4.1.2 Is there temporal relationship between gridded data differences and the location of the underlying rain gauges?
+
+There has been a gradual reduction in the number of gauges in the Upper Severn (_fourth panel_ of **Figure 10**) and this has coincided with a slight jump in the variability of the difference between CEH-GEAR & HadUK-Grid in Plynlimon and to a lesser extent Abermule (_second panel_ of **Figure 10**). No pattern or change in min dist to gauge was shown in Dolwen.
+
+A version of this plot without Plynlimon Flume is available [here](figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time_wo_plyn.png)
+
 <img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time.png" width="700">
 
-_**Figure X**_
-
-Plot without Plynlimon Flume [here](figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time_wo_plyn.png)
-
-_**Figure X**_
-
-### Interpretation
-
-- perhaps we are using too much data in one go to compare differences.
-- there is some indication that
+_**Figure 10** Comparison of dataset differences and inputted rain gauge information across the study period._
 
 ### Code
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)\_
 
 # 4.2 Dataset uncertainty during Severn high flow events
+
+TODO:
 
 We examine 6 major Severn-wide high flow events between 2000-2008 (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).  
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
