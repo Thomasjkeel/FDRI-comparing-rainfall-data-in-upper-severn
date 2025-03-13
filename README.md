@@ -81,6 +81,10 @@ The reduction in density of the rain gauge network in the Upper Severn (shown in
 ### 2.1.3 Difference in quality control procedures
 
 Both datasets uses differing QC procedures, and may included different rain gauges at different time steps.
+The QC methodologies are noted in the following sections of the data paper:
+CEH-GEAR (Section 4 of [Keller et al. 2015](https://doi.org/10.5194/essd-7-143-2015)) & HadUK-Grid (Section of [Hollis et al. 2019](https://rmets.onlinelibrary.wiley.com/doi/10.1002/gdj3.78))
+
+🌲 _I am happy to discuss the QC protocols further, and a more robust rain QC protocol is provided in [Lewis et al. 2021](https://doi.org/10.1016/j.envsoft.2021.105169)_ 🌲
 
 # 3. Methods
 
@@ -89,14 +93,14 @@ Notebooks provided in `notebooks/` detail how the analysis and figures were prod
 ## 3.1 Catchment masks
 
 We mask the areas around each catchment (see example in **Figure X**).  
-Details provided in _Section 4_ of `notebooks/explore_upper_severn_flood_events.ipynb`.
+Details of masking is provided in _Section 4_ of `notebooks/explore_upper_severn_flood_events.ipynb`.
 
 ## 3.2 Height profile
 
-We also use a 1km by 1km height profile for the region (see figure below)  
+We also use a 1km by 1km height profile for the region (**Figure 4**). This was extracted using 50 metre OS topography data and clipping by extent in QGIS. The data was then exported to a 1km by 1km grid.
 <img src="figures/abermule_height_profile.png" width="700">
 
-_<strong>Figure 3.</strong> Height profile in metres of the Upper Severn catchment_
+_<strong>Figure 4.</strong> Height profile in metres of the Upper Severn catchment_
 
 # 4. Results
 
