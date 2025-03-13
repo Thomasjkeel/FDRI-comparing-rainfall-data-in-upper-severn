@@ -143,7 +143,7 @@ A version of this plot without Plynlimon Flume is available [here](figures/ceh_v
 
 _**Figure 10** Comparison of dataset differences and inputted rain gauge information across the study period._
 
-### Code
+### Code for these figures
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)\_
 
@@ -164,7 +164,7 @@ _**Figure X**_
 
 - Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
 
-### Code
+### Code for these figures
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_upper_severn_flood_events.ipynb)
 
@@ -199,7 +199,7 @@ _more figures available under `figures/carreg_wen_case_study`_
 
 - Carreg Wen represented a blind spot for rainfall estimates in the Upper Severn, which was biased towards CEH-GEAR
 
-### Code
+### Code for these figures
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/Carreg_wen_case_study.ipynb)\_
 
