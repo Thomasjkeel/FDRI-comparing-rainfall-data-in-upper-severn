@@ -104,20 +104,23 @@ _<strong>Figure 4.</strong> Height profile in metres of the Upper Severn catchme
 
 ## 4.1 Differences between gridded datasets in Upper Severn
 
-The Abermule catchment encompasses the other two, and in this wider catchment there is larger HadUK-Grid bias (**Figure 5**). However, there is a longer tail in the CEH-GEAR bias, likely attributed to grid cells in areas in the smaller catchments Dolwen and Plynlimon Flume.
+The Abermule catchment encompasses the other two, and in this wider catchment there is larger HadUK-Grid bias (**Figure 5**). However, there is a longer tail in the CEH-GEAR bias, likely attributed to grid cells in areas in the smaller catchments of Dolwen and Plynlimon Flume.
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
 _<strong>Figure 5</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn. Histogram bins are every 5 mm difference._
 
-of higher altitude in
-Clearly greater bias towards Plynlimon.  
+There is also shown in the spatial profile of the upper severn (**Figure 6**), and this spatial signature of this bias towards the upper reaches of the Severn is not seasonally dependent (**Figure 7**).  
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
 
-_<strong>Figure 6</strong> Masked output of the dataset difference in the Upper Severn between 1 Jan 1970 and 31 Dec 2022._
+_<strong>Figure 6</strong> Mean dataset difference in the Upper Severn using a region mask._
 
 <img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_by_season.png" width="700">
 
 _<strong>Figure 7</strong> Seasonal dataset differences in the Upper Severn between 1 Jan 1970 and 31 Dec 2022._
+
+#### 4.1.1 Is there relationship between gridded data differences and the location of the underlying rain gauges?
+
+Next, we examine some simple relationships between rain gauge height, grided data differences and minimum distances to rain gauges (CEH-GEAR only).
 
 But there is opposing relationship between height of gauge and differences between CEH-GEAR and HadUK-Grid  
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rain_vs_height_scatter.png" width="700">
@@ -142,12 +145,12 @@ Plot without Plynlimon Flume [here](figures/ceh_vs_haduk_differences/ceh_vs_hadu
 
 _<strong>Figure X</strong>_
 
-### Interpretation:
+### Interpretation
 
 - perhaps we are using too much data in one go to compare differences.
 - there is some indication that
 
-### Code:
+### Code
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)\_
 
@@ -162,11 +165,11 @@ _<strong>Figure X</strong>_
 
 _<strong>Figure X</strong>_
 
-### Interpretation:
+### Interpretation
 
 - Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
 
-### Code:
+### Code
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_upper_severn_flood_events.ipynb)
 
@@ -197,11 +200,11 @@ _<strong>Figure X</strong> rainfall differences between gridded datasets and the
 
 _more figures available under `figures/carreg_wen_case_study`_
 
-### Interpretation:
+### Interpretation
 
 - Carreg Wen represented a blind spot for rainfall estimates in the Upper Severn, which was biased towards CEH-GEAR
 
-### Code:
+### Code
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/Carreg_wen_case_study.ipynb)\_
 
@@ -226,9 +229,13 @@ There are few heavier libraries used in this project that may be awkward for new
 | seaborn   | plotting                            | 0.13.2   |
 | scipy     | statistics                          | 1.15.0   |
 
-## Further reading:
+## Further reading
 
 - https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods
+
+## Disclaimer
+
+_We have only used rain gauge information related to the CEH-GEAR product_
 
 ## Credits
 
