@@ -6,7 +6,7 @@ Project comparing rainfall estimates in the Upper Severn using data from rain ga
 
 **Project Goals:**
 
-1. To reduce the uncertainty of rain-driven flood estimation in the upper reaches of the Severn catchment.
+1. To reduce the uncertainty of rain-driven flood estimates in the upper reaches of the Severn catchment.
 2. To quantify the differences between the CEH-GEAR and HadUK-Grid within a river catchment.
 
 ## **Headline Findings**
@@ -109,7 +109,7 @@ The Abermule catchment encompasses the other two, and in this wider catchment th
 
 _**Figure 5** Histogram of differences between CEH-Gear and HadUK in Upper Severn. Histogram bins are every 5 mm difference._
 
-There is also a clear spatial pattern of bias shown in the upper severn (**Figure 6**), and this pattern is not seasonally dependent, the strength of bias is (likely due to seasonal differences in total rainfall) (**Figure 7**).  
+There is also a clear spatial pattern of bias shown in the upper severn (**Figure 6**), and this pattern is not seasonally dependent (**Figure 7**).  
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
 
 _**Figure 6** Mean dataset difference in the Upper Severn using a region mask._
@@ -120,22 +120,18 @@ _**Figure 7** Seasonal dataset differences in the Upper Severn between 1 Jan 197
 
 #### 4.1.1 Is there relationship between gridded data differences and the location of the underlying rain gauges?
 
-Next, we examine some simple relationships between rain gauge height, gridded data differences and minimum distances to rain gauges (CEH-GEAR only).
+Next, we examine some simple relationships between grid cell height, gridded data differences and minimum distances to the nearest rain gauge (CEH-GEAR only).
 
-A slight negative correlation is shown between rain gauge height and rainfall differences in Abermule, but not for the other catchments (**Figure 8**). A similar pattern is shown between the minimum distance to the nearest rain gauge and rainfall differences (**Figure 9**).
-Comparison between height and min distance are shown in the [figure](figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png) (notably there is a strong positive correlations between height and min dist in Dolwen and Plynlimon only).
+A slight negative correlation is shown between grid cell height and rainfall differences in Abermule, but not for the other catchments (**Figure 8**). A similar pattern is shown between the minimum distance to the nearest rain gauge and rainfall differences (**Figure 9**).
+Comparison between grid cell height and min distance are shown in this [figure](figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png) (in that there is a strong positive correlation between height and min dist in both Dolwen and Plynlimon).
 
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rain_vs_height_scatter.png" width="700">
 
-_**Figure 8** Rainfall data difference vs height of rain gauge (mean of 1 Jan 1970 to 31 Dec 2022). Height was dervied from a 1 km by 1 km profile detailed in **Section 3.2**._
+_**Figure 8** Rainfall data difference vs height of grid cell (mean of 1 Jan 1970 to 31 Dec 2022). Height was dervied from a 1 km by 1 km profile detailed in **Section 3.2**._
 
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rainfall_vs_mindist_scatter.png" width="700">
 
 _**Figure 9** Rainfall data difference vs minimum distance to gauge from CEH-GEAR (mean of 1 Jan 1970 to 31 Dec 2022)._
-
-<!-- <img src="figures/ceh_vs_haduk_differences/uppersevern_height_vs_mindist_scatter.png" width="700"> -->
-
-<!-- _**Figure 10** Height of rain gauge vs minimum distance to gauge (mean of 1 Jan 1970 to 31 Dec 2022). Height was dervied from a 1 km by 1 km profile detailed in **Section 3.2**._ -->
 
 #### 4.1.2 Is there temporal relationship between gridded data differences and the location of the underlying rain gauges?
 
