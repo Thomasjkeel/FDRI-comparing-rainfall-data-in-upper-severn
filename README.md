@@ -15,7 +15,7 @@ Notebooks provided in `notebooks/` detail how the analysis and figures below wer
 
 - [1. Data](#1-data)
   - [1.1. Factors contributing to differences in gridded rainfall products](#11-factors-contributing-to-differences-between-ceh-gear--haduk-grid)
-- [2. The Upper Severn](#the-upper-severn)
+- [2. Study area: The Upper Severn](#2-study-area-the-upper-severn)
 - [3. Methods](#3-methods)
   - [3.1 Masking catchment](#31-catchment-masks)
   - [3.2. Height profile](#32-height-profile)
@@ -39,7 +39,7 @@ Downloaded from OS OpenRivers ([link](https://www.ordnancesurvey.co.uk/products/
 
 I am happy to provide any of the above data, so please email me if you would like it.
 
-# 2. The Upper Severn
+# 2. Study area: The Upper Severn
 
 We examine three catchments towards the source of the River Severn: [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m).
 <img src="figures/upper_severn_catchments.png" width="700">
