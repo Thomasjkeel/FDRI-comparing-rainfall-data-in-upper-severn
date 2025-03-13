@@ -11,7 +11,10 @@ Project comparing rainfall estimates in the Upper Severn using rain gauges and g
 
 ## **Headline Findings**
 
-- There is a spatial signature to the difference between CEH-GEAR and HadUK-Grid (see **Figures X, X** & **X**)
+TODO
+
+- There is a spatial signature to the difference between CEH-GEAR and HadUK-Grid (**Figures X, X** & **X**)
+- The relationship between changes to the density of rain gauges to differences between gridded data products is uncertain, but there has been a decrease in the number of daily rain gauges in the Upper Severn (**Figure 2**), alongside a relationship between X and X (**Figures X, X** & **X**).
 
 ## Index
 
@@ -56,12 +59,12 @@ _<strong>Figure 1.</strong> The three catchment used in this study of the Upper 
 
 ### 2.1.1 A reduction in daily rain gauges in Upper Severn
 
-In the 1980s there used to be more rain gauges in the Upper Severn (see figure below):
+On 1 January 1980 there were more rain gauges in the Upper Severn around Abermule than on 1 January 2022 (see **Figure 2**).
+Additionally, the proportion of rain gauges used in both the daily and monthly CEH-GEAR product becomes 100% in 2022.
+
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
 
-_<strong>Figure 2.</strong> Number of daily rain gauges around Abermule. Red circles represent daily-only rain gauges, yellow circles represent gauges used in daily and monthly CEH-GEAR product.._
-
-The relationship between density of rain gauges to differences between datasets is briefly explored here.
+_<strong>Figure 2.</strong> Number of daily rain gauges around Abermule. Red circles represent daily-only rain gauges, yellow circles represent gauges used in daily and monthly CEH-GEAR product._
 
 ### 2.1.2 Difference of methods used to grid the rain gauge data
 
