@@ -106,10 +106,9 @@ _<strong>Figure 4.</strong> Height profile in metres of the Upper Severn catchme
 
 ## 4.1 Differences between gridded datasets in Upper Severn
 
-_Note: information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)_
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
-_<strong>Figure X</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn_
+_<strong>Figure t</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn. Histogram bins are every 5 mm difference._
 
 Clearly greater bias towards Plynlimon.  
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
@@ -135,8 +134,7 @@ Through time
 
 _<strong>Figure X</strong>_
 
-Without Plynlimon:  
-<img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time_wo_plyn.png" width="700">
+Plot without Plynlimon Flume [here](figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time_wo_plyn.png)
 
 _<strong>Figure X</strong>_
 
@@ -145,9 +143,11 @@ _<strong>Figure X</strong>_
 - perhaps we are using too much data in one go to compare differences.
 - there is some indication that
 
-# 4.2 Dataset uncertainty during Severn high flow events
+### Code:
 
-_Note: information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_upper_severn_flood_events.ipynb)_
+- Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)\_
+
+# 4.2 Dataset uncertainty during Severn high flow events
 
 We examine 6 major Severn-wide high flow events between 2000-2008 (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).  
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
@@ -162,9 +162,12 @@ _<strong>Figure X</strong>_
 
 - Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
 
+### Code:
+
+- Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_upper_severn_flood_events.ipynb)
+
 ## 4.3 Carreg Wen case study
 
-_Note: information about how these plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/Carreg_wen_case_study.ipynb)_
 The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Grid.  
 <img src="figures/upper_severn_floods/uppersevern_flood_event_mean_difference.png" width="700">
 
@@ -193,6 +196,10 @@ _more figures available under `figures/carreg_wen_case_study`_
 ### Interpretation:
 
 - Carreg Wen represented a blind spot for rainfall estimates in the Upper Severn, which was biased towards CEH-GEAR
+
+### Code:
+
+- Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/Carreg_wen_case_study.ipynb)\_
 
 # 5. Discussion
 
