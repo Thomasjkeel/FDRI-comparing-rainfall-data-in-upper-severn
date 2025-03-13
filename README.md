@@ -34,8 +34,7 @@ TODO
 # 1. Data
 
 **UK gridded rainfall products**  
-The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)).  
-For this project, we use daily 1km by 1km rainfall from each of these products, which we have extracted from UKCEH servers and CEDA JASMIN respectively.
+The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)). We used daily 1km by 1km rainfall between 1 Jan 1970 and 31 Dec 2022 from each of these products. A spatial and time subset of these dataset was extracted from UKCEH servers and CEDA JASMIN respectively.
 
 **Daily rain gauge data**  
 This has been extracted from internal UKCEH servers, and includes quality controlled data from Met Office rain gauges. This data is available in `gauge_data/`.
@@ -84,7 +83,7 @@ Both datasets uses differing QC procedures, and may included different rain gaug
 The QC methodologies are noted in the following sections of the data paper:
 CEH-GEAR (Section 4 of [Keller et al. 2015](https://doi.org/10.5194/essd-7-143-2015)) & HadUK-Grid (Section of [Hollis et al. 2019](https://rmets.onlinelibrary.wiley.com/doi/10.1002/gdj3.78))
 
-🌲 _I am happy to discuss the QC protocols further, and a more robust rain QC protocol is provided in [Lewis et al. 2021](https://doi.org/10.1016/j.envsoft.2021.105169)_ 🌲
+🌲 _I am happy to discuss the QC protocols further, and a more robust rain QC protocol for hourly data is provided in [Lewis et al. 2021](https://doi.org/10.1016/j.envsoft.2021.105169)_ 🌲
 
 # 3. Methods
 
@@ -92,8 +91,7 @@ Notebooks provided in `notebooks/` detail how the analysis and figures were prod
 
 ## 3.1 Catchment masks
 
-We mask the areas around each catchment (see example in **Figure X**).  
-Details of masking is provided in _Section 4_ of `notebooks/explore_upper_severn_flood_events.ipynb`.
+We mask the areas around each catchment (see example in **Figure 6**). More details of masking is provided in _Section 4_ of `notebooks/explore_upper_severn_flood_events.ipynb`.
 
 ## 3.2 Height profile
 
@@ -106,14 +104,20 @@ _<strong>Figure 4.</strong> Height profile in metres of the Upper Severn catchme
 
 ## 4.1 Differences between gridded datasets in Upper Severn
 
+The Abermule catchment encompasses the other two, and in this wider catchment there is larger HadUK-Grid bias (**Figure 5**). However, there is a longer tail in the CEH-GEAR bias, likely attributed to grid cells in areas in the smaller catchments Dolwen and Plynlimon Flume.
 <img src="figures/ceh_vs_haduk_differences/catchment_hist_ceh_vs_haduk.png" width="700">
 
-_<strong>Figure t</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn. Histogram bins are every 5 mm difference._
+_<strong>Figure 5</strong> Histogram of differences between CEH-Gear and HadUK in Upper Severn. Histogram bins are every 5 mm difference._
 
+of higher altitude in
 Clearly greater bias towards Plynlimon.  
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
 
-_<strong>Figure X</strong> caption._
+_<strong>Figure 6</strong> Masked output of the dataset difference in the Upper Severn between 1 Jan 1970 and 31 Dec 2022._
+
+<img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_by_season.png" width="700">
+
+_<strong>Figure 7</strong> Seasonal dataset differences in the Upper Severn between 1 Jan 1970 and 31 Dec 2022._
 
 But there is opposing relationship between height of gauge and differences between CEH-GEAR and HadUK-Grid  
 <img src="figures/ceh_vs_haduk_differences/uppersevern_rain_vs_height_scatter.png" width="700">
