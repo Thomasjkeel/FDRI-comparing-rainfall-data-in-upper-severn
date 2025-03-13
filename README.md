@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Project comparing rainfall estimates in the Upper Severn using rain gauges and gridded rainfall products.
+Project comparing rainfall estimates in the Upper Severn using data from rain gauges and gridded rainfall products.
 
 **Project Goals:**
 
