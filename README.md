@@ -46,11 +46,11 @@ Downloaded from NRFA ([link](https://nrfa.ceh.ac.uk/data/search))
 **Rivers shapefile**  
 Downloaded from OS OpenRivers ([link](https://www.ordnancesurvey.co.uk/products/os-open-rivers))
 
-_I am happy to provide any of the above data (or any related info), so please feel free to email [me](mailto:tomkee@ceh.ac.uk)._
+🌲 _I am happy to provide any of the above data (or any related info), so please feel free to email [me](mailto:tomkee@ceh.ac.uk)._ 🌲
 
 # 2. Study area: The Upper Severn
 
-We examine three catchments towards the source of the River Severn: [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m).
+We use three NRFA catchments towards the source of the River Severn: [Abermule](https://nrfa.ceh.ac.uk/data/station/info/54014) (flow gauge at: 86.8 m), [Dolwen](https://nrfa.ceh.ac.uk/data/station/info/54080) (147.3 m) and [Plynlimon Flume](https://nrfa.ceh.ac.uk/data/station/info/54022) (321.3 m).
 <img src="figures/upper_severn_catchments.png" width="700">
 
 _<strong>Figure 1.</strong> The three catchment used in this study of the Upper Severn_
@@ -59,7 +59,7 @@ _<strong>Figure 1.</strong> The three catchment used in this study of the Upper 
 
 ### 2.1.1 A reduction in daily rain gauges in Upper Severn
 
-On 1 January 1980 there were more rain gauges in the Upper Severn around Abermule than on 1 January 2022 (see **Figure 2**).
+On 1 January 1980 there were more rain gauges in the Upper Severn around Abermule than on 1 January 2022 (**Figure 2**).
 Additionally, the proportion of rain gauges used in both the daily and monthly CEH-GEAR product becomes 100% in 2022.
 
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
@@ -68,18 +68,15 @@ _<strong>Figure 2.</strong> Number of daily rain gauges around Abermule. Red cir
 
 ### 2.1.2 Difference of methods used to grid the rain gauge data
 
-Rain gauge data is interpolated onto a regular grid. The exact gauges which are included differ based on gridded rainfall product.  
-The reduction in density of the rain gauge network in the Upper Severn (shown in **Figure 2**) puts more uncertainty into the rainfall estimation, and means greater differences are created by the exact methods used to spatially interpolate data from rain gauges to a regular grid (e.g. 1km by 1km).
+Rain gauge data is interpolated onto a regular grid differently by the two gridded products (see **Figure 3**). CEH-GEAR uses [Natural Neighbour Interpolation](https://en.wikipedia.org/wiki/Natural-neighbor_interpolation), HadUK-Grid uses [Inverse Distance Weighting](https://en.wikipedia.org/wiki/Inverse_distance_weighting).
+The differences will be subtle, but the choice of spatial interpolation creates uncertainty (see: [DOI:10.5772/65996](https://www.intechopen.com/chapters/52704)).
 
-<!-- Example of rain gauge data onto a regular grid:
-<img src="figures/gridding_example_from_gdal.png" width="400"> -->
+<img src="figures/gridding_example_from_gdal.png" width="300">
 
-CEH-GEAR uses [Natural Neighbour Interpolation](https://en.wikipedia.org/wiki/Natural-neighbor_interpolation), HadUK-Grid uses [Inverse Distance Weighting](https://en.wikipedia.org/wiki/Inverse_distance_weighting).
+_<strong>Figure 3.</strong> Example of spatial interpolation of rain gauges network to a regular grid_
 
-Differences will be subtle, but the choice of spatial interpolation creates uncertainty.
-Below a figure shows the differences between spatial interpolation methods (for more see: [DOI:10.5772/65996](https://www.intechopen.com/chapters/52704)):
-
-<!-- <img src="figures/fig2_from_wu_and_hung_2016.png" width="400"> -->
+Another issues is that the exact gauges which are included differ based on gridded rainfall product.
+The reduction in density of the rain gauge network in the Upper Severn (shown in **Figure 2**) puts more uncertainty into the rainfall estimation, and means larger differences are created by the exact methods used to spatially interpolate data from rain gauges to a regular grid (e.g. 1km by 1km).
 
 ### 2.1.3 Difference in quality control procedures
 
