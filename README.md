@@ -109,7 +109,7 @@ The Abermule catchment encompasses the other two, and in this wider catchment th
 
 _**Figure 5** Histogram of differences between CEH-Gear and HadUK in Upper Severn. Histogram bins are every 5 mm difference._
 
-There is also shown in the spatial profile of the upper severn (**Figure 6**), and this spatial signature of this bias towards the upper reaches of the Severn is not seasonally dependent (**Figure 7**).  
+There is also a clear spatial pattern of bias shown in the upper severn (**Figure 6**), and this pattern is not seasonally dependent, the strength of bias is (likely due to seasonal differences in total rainfall) (**Figure 7**).  
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
 
 _**Figure 6** Mean dataset difference in the Upper Severn using a region mask._
