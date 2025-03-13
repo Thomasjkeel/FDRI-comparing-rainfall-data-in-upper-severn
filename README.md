@@ -2,10 +2,12 @@
 
 ## Introduction
 
-Project comparing rainfall estimates in the Upper Severn using rain gauges and gridded rainfall products.  
-Notebooks provided in `notebooks/` detail how the analysis and figures below were produced
+Project comparing rainfall estimates in the Upper Severn using rain gauges and gridded rainfall products.
 
-**Project Goal:** To reduce the uncertainty of rain-driven flood estimation in the upper reaches of the Severn catchment.
+**Project Goals:**
+
+1. To reduce the uncertainty of rain-driven flood estimation in the upper reaches of the Severn catchment.
+2. To quantify the differences between the CEH-GEAR and HadUK-Grid within a river catchment.
 
 ## **Headline Findings**
 
@@ -14,8 +16,8 @@ Notebooks provided in `notebooks/` detail how the analysis and figures below wer
 ## Index
 
 - [1. Data](#1-data)
-  - [1.1. Factors contributing to differences in gridded rainfall products](#11-factors-contributing-to-differences-between-ceh-gear--haduk-grid)
 - [2. Study area: The Upper Severn](#2-study-area-the-upper-severn)
+  - [2.1. Factors contributing to differences in gridded rainfall products in region](#21-factors-contributing-to-differences-between-ceh-gear--haduk-grid-over-upper-severn)
 - [3. Methods](#3-methods)
   - [3.1 Masking catchment](#31-catchment-masks)
   - [3.2. Height profile](#32-height-profile)
@@ -24,12 +26,16 @@ Notebooks provided in `notebooks/` detail how the analysis and figures below wer
   - [4.2. Dataset uncertainty during Severn high flow events](#42-dataset-uncertainty-during-severn-high-flow-events)
   - [4.3. Carreg Wen case study](#43-carreg-wen-case-study)
 - [5. Discussion](#5-discussion)
+- [6. Technical note, further reading, credits](#6-endnotes)
 
 # 1. Data
 
-**Gridded rainfall data products**  
+**Gridded rainfall products**  
 The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)).  
 For this project, we use daily 1km by 1km rainfall from each of these products, which we have extracted from UKCEH servers and CEDA JASMIN respectively.
+
+**Daily rain gauge data**  
+This has been extracted from internal UKCEH servers, and includes quality controlled data from Met Office rain gauges. This data is available in `gauge_data/`.
 
 **NRFA catchment boundaries**  
 Downloaded from NRFA ([link](https://nrfa.ceh.ac.uk/data/search))
@@ -37,7 +43,7 @@ Downloaded from NRFA ([link](https://nrfa.ceh.ac.uk/data/search))
 **Rivers shapefile**  
 Downloaded from OS OpenRivers ([link](https://www.ordnancesurvey.co.uk/products/os-open-rivers))
 
-I am happy to provide any of the above data, so please email me if you would like it.
+I am happy to provide any of the above data (or any related info), so please feel free to email [me](mailto:tomkee@ceh.ac.uk).
 
 # 2. Study area: The Upper Severn
 
@@ -53,7 +59,7 @@ _<strong>Figure 1.</strong> The three catchment used in this study of the Upper 
 In the 1980s there used to be more rain gauges in the Upper Severn (see figure below):
 <img src="figures/num_gauges_around_abermule_1980vs2022.png" width="700">
 
-_<strong>Figure 2.</strong> Number of gauges in the Upper Severn. Red circles represent daily rain gauges around the Abermule catchment available and used in the CEH-GEAR data product._
+_<strong>Figure 2.</strong> Number of daily rain gauges around Abermule. Red circles represent daily-only rain gauges, yellow circles represent gauges used in daily and monthly CEH-GEAR product.._
 
 The relationship between density of rain gauges to differences between datasets is briefly explored here.
 
@@ -77,6 +83,8 @@ Below a figure shows the differences between spatial interpolation methods (for 
 Both datasets uses differing QC procedures, and may included different rain gauges at different time steps.
 
 # 3. Methods
+
+Notebooks provided in `notebooks/` detail how the analysis and figures were produced.
 
 ## 3.1 Catchment masks
 
@@ -186,10 +194,27 @@ _more figures available under `figures/carreg_wen_case_study`_
 
 - uncertainty in the Pynlimon region about how much rainfall falls during flood events (also see project examining influence of height on rainfall estimation in gridded rainfall products [here](#https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods))
 
+# 6. Endnotes
+
+## Technical note
+
+There are few heavier libraries used in this project that may be awkward for new users, but are commonly-used libraries for dealing with multi-dimensional (spatial) data in Python. These are:
+
+| library   | use                                 | version  |
+| --------- | ----------------------------------- | -------- |
+| xarray    | loading, subsetting, multi-dim data | 2025.1.1 |
+| pandas    | loading data                        | 2.2.3    |
+| polars    | loading data (fast)                 | 1.19.0   |
+| geopandas | loading shapefiles                  | 1.0.1    |
+| rioxarray | loading raster data                 | 0.18.2   |
+| shapely   | spatial operations                  | 2.0.6    |
+| seaborn   | plotting                            | 0.13.2   |
+| scipy     | statistics                          | 1.15.0   |
+
 ## Further reading:
 
 - https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods
 
-## Endnote
+## Credits
 
 _This work was carried out as part of the [Floods and Droughts Research Infrastructure](https://fdri.org.uk/) (FDRI) project led by the UK Centre for Ecology & Hydrology._
