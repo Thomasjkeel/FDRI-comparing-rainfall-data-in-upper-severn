@@ -33,7 +33,7 @@ TODO
 
 # 1. Data
 
-**Gridded rainfall products**  
+**UK gridded rainfall products**  
 The two main observation-based gridded rainfall products available for the UK are the CEH-GEAR (available [here](https://catalogue.ceh.ac.uk/documents/dbf13dd5-90cd-457a-a986-f2f9dd97e93c)) and HadUK-Grid (available [here](https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb/)).  
 For this project, we use daily 1km by 1km rainfall from each of these products, which we have extracted from UKCEH servers and CEDA JASMIN respectively.
 
@@ -46,7 +46,7 @@ Downloaded from NRFA ([link](https://nrfa.ceh.ac.uk/data/search))
 **Rivers shapefile**  
 Downloaded from OS OpenRivers ([link](https://www.ordnancesurvey.co.uk/products/os-open-rivers))
 
-I am happy to provide any of the above data (or any related info), so please feel free to email [me](mailto:tomkee@ceh.ac.uk).
+_I am happy to provide any of the above data (or any related info), so please feel free to email [me](mailto:tomkee@ceh.ac.uk)._
 
 # 2. Study area: The Upper Severn
 
