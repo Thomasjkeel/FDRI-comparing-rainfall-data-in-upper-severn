@@ -160,6 +160,10 @@ _**Figure X**_
 
 _**Figure X**_
 
+<img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_height.png" width="700">
+
+_**Figure X**_
+
 ### Interpretation
 
 - Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
