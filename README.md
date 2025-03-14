@@ -149,12 +149,14 @@ _**Figure 10** Comparison of dataset differences and inputted rain gauge informa
 
 # 4.2 Dataset uncertainty during Severn high flow events
 
-TODO:
+We examine 6 major Severn-wide high flow events between 2000-2008. High flow events are defined as [gauged daily flow](https://nrfa.ceh.ac.uk/data/about-data/daily-flow-data/gauged-daily-flow-data) above the 95th percentile in each of the [Bewdley](https://nrfa.ceh.ac.uk/data/station/info/54001), [Buildwas](https://nrfa.ceh.ac.uk/data/station/info/54095) and [Montford](https://nrfa.ceh.ac.uk/data/station/info/54005) catchments. By using three catchments, we hope to caputre events that co-occured across the Severn.
 
-We examine 6 major Severn-wide high flow events between 2000-2008 (i.e. those above 95th percentile in each of the Abermule, Plynlimon, Bewdley, Buildwas and Dolwen catchments).  
+There is no uniform bias leading up to
+(**Figure 11**)
+
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
-_**Figure X**_
+_**Figure 11** High flow events over the Upper Severn. In each case, a dated event is the mean of 10 to 0 days before it._
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
 
@@ -170,7 +172,7 @@ _**Figure X**_
 
 ### Code for these figures
 
-- Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_upper_severn_flood_events.ipynb)
+- Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_upper_severn_high_flow_events.ipynb)
 
 ## 4.3 Carreg Wen case study
 
@@ -209,7 +211,7 @@ _more figures available under `figures/carreg_wen_case_study`_
 
 # 5. Discussion
 
-- uncertainty in the Pynlimon region about how much rainfall falls during flood events (also see project examining influence of height on rainfall estimation in gridded rainfall products [here](#https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods))
+- uncertainty in the Pynlimon region about how much rainfall falls during high-flow events (also see project examining influence of height on rainfall estimation in gridded rainfall products [here](#https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods))
 
 # 6. Endnotes
 
