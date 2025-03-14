@@ -119,7 +119,7 @@ _**Figure 6** Mean dataset difference in the Upper Severn using a region mask._
 
 _**Figure 7** Seasonal dataset differences in the Upper Severn between 1 Jan 1970 and 31 Dec 2022._
 
-#### 4.1.1 Is there relationship between gridded data differences and the location of the underlying rain gauges?
+### 4.1.1 Is there a relationship between gridded data differences and altitude or distance to rain gauge?
 
 Next, we examine some simple relationships between grid cell height, gridded data differences and minimum distances to the nearest rain gauge (CEH-GEAR only).
 
@@ -134,7 +134,7 @@ _**Figure 8** Rainfall data difference vs height of grid cell (mean of 1 Jan 197
 
 _**Figure 9** Rainfall data difference vs minimum distance to gauge from CEH-GEAR (mean of 1 Jan 1970 to 31 Dec 2022)._
 
-#### 4.1.2 Is there temporal relationship between gridded data differences and the distances to gauge or altitude?
+### 4.1.2 Is there temporal relationship between gridded data differences and the distances to gauge or altitude?
 
 Grid cells within Plynlimon Flume have consistently been associated with a rainfall estimate with a CEH-GEAR bias (_first panel_ of **Figure 10**).
 Notably, when the the minimum distance to the nearest gauge jumped in 1998, the mean and standard deviation of the dataset difference jumped too (_second_ and _third panel_ of **Figure 10**).
@@ -151,7 +151,7 @@ _**Figure 10** Comparison of dataset differences and inputted rain gauge informa
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/explore_differences_in_gridded_datasets.ipynb)\_
 
-# 4.2 Dataset uncertainty during Severn high flow events
+## 4.2 Dataset uncertainty during Severn high flow events
 
 We examine 6 major Severn-wide high flow events between 2000-2008. High flow events are defined as [gauged daily flow](https://nrfa.ceh.ac.uk/data/about-data/daily-flow-data/gauged-daily-flow-data) above the 95th percentile in each of the [Bewdley](https://nrfa.ceh.ac.uk/data/station/info/54001), [Buildwas](https://nrfa.ceh.ac.uk/data/station/info/54095) and [Montford](https://nrfa.ceh.ac.uk/data/station/info/54005) catchments. By focusing on three catchments, we hope to caputre events that co-occured across the Severn.
 
@@ -164,11 +164,11 @@ For a further six high flow events see this [figure](figures/upper_severn_floods
 
 _**Figure 11** High flow events over the Upper Severn. In each case, a dated event is the mean of 10 to 0 days before it. Circle represent rain gauges and their color represents their difference from the nearest grid cell of the CEH-GEAR dataset._
 
-#### 4.2.1 Is there relationship between gridded data differences for these high flow events and the distances to gauge or altitude?
+### 4.2.1 Is there relationship between gridded data differences for these high flow events and the distances to gauge or altitude?
 
 There is no consistent pattern between the difference in rainfall in CEH-GEAR vs HadUK-Grid and minimum distance to gauge (**Figure 12**) in any of the three catchments.
 
-There is relatively consistent negative correlation between rainfall differences and grid cell height during the high flow events, with a tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes (**Figure 13**).
+There is a tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes as shown by negative correlation (**Figure 13**).
 Although this trend does not hold in the high altitude Plynlimon catchment.
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
@@ -185,9 +185,10 @@ _**Figure 13** Comparison between grid cell height and gridded data differences 
 
 ## 4.3 Carreg Wen case study
 
-Notably, when the the minimum distance to the nearest gauge jumped with the removal of a gauge nearby (_third panel_ of **Figure 10**)
+The rain gauge at Carreg Wen is situated in the middle of the Plynlimon catchment area, and was included in both the CEH-GEAR and HadUK-Grid until 1988. In this final example, we used in-filled and quality-controlled data from the Carreg Wen gauge extending 1970-2010 (currently unseen by CEH-GEAR or HadUK-Grid).
 
-The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Grid.  
+When the the minimum distance to the nearest gauge jumped with the removal of a gauge nearby (_third panel_ of **Figure 10**)
+
 <img src="figures/upper_severn_floods/uppersevern_flood_event_mean_difference.png" width="700">
 
 _**Figure X** Location of the daily Carreg Wen gauge._
@@ -196,23 +197,25 @@ _**Figure X** Location of the daily Carreg Wen gauge._
 
 _**Figure X** Location of the daily Carreg Wen gauge._
 
-Uncertainty around data from the old Carreg Wen gauge (which was included in CEH-GEAR from 1976-1988)
-_'nearby' represents the eight surrounding grid cells_:
-<img src="figures/carreg_wen_case_study/annual_mean_rainfall_comparison_new_gauge.png" width="500">
-
-_**Figure X** _'nearby' represents the eight surrounding grid cells\*\*
+### 4.3.1 Comparing new Carreg Wen gauge to nearby gridded data
 
 <img src="figures/carreg_wen_case_study/flood_comparison_line.png" width="700">
 
 _**Figure X** Compare nearby grid cells with new Carreg Wen rain gauge.'nearby' represents the eight surrounding grid cells_
 
+<img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference.png" width="700">
+
+_**Figure X** rainfall differences between gridded datasets and the unseen Carreg Wen gauge_
+
+### 4.3.2 Comparing new Carreg Wen gauge to other nearby gauges which are used in CEH-GEAR
+
 <img src="figures/carreg_wen_case_study/flood_comparison_line_nearbygauges_w_grid.png" width="700">
 
 _**Figure X** View rainfall in nearby gauges_
 
-<img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference.png" width="700">
+<img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference_rain_gauge_version.png" width="700">
 
-_**Figure X** rainfall differences between gridded datasets and the unseen Carreg Wen gauge_
+_**Figure X** rainfall differences between the unseen Carreg Wen gauge and nearby gauges that are used in the CEH-GEAR_
 
 _more figures available under `figures/carreg_wen_case_study`_
 
