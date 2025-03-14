@@ -15,6 +15,7 @@ TODO
 
 - There is a spatial signature to the difference between CEH-GEAR and HadUK-Grid (**Figures X, X** & **X**)
 - The relationship between changes to the density of rain gauges to differences between gridded data products is uncertain, but there has been a decrease in the number of daily rain gauges in the Upper Severn (**Figure 2**), alongside a relationship between X and X (**Figures X, X** & **X**).
+- Tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes during high flow events (**Figure 13**).
 
 ## Index
 
@@ -161,14 +162,14 @@ For a further six high flow events see this [figure](figures/upper_severn_floods
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
-_**Figure 11** High flow events over the Upper Severn. In each case, a dated event is the mean of 10 to 0 days before it._
+_**Figure 11** High flow events over the Upper Severn. In each case, a dated event is the mean of 10 to 0 days before it. Circle represent rain gauges and their color represents their difference from the nearest grid cell of the CEH-GEAR dataset._
 
 #### 4.2.1 Is there relationship between gridded data differences for these high flow events and the distances to gauge or altitude?
 
 There is no consistent pattern between the difference in rainfall in CEH-GEAR vs HadUK-Grid and minimum distance to gauge (**Figure 12**) in any of the three catchments.
 
-For the Abermule catchment, there is a negative correlation between rainfall differences and grid cell height during the high flow events (**Figure 13**).
-In both **Figure 12** and **Figure 13**, there is a seperation between grid cells in Abermule and Plynlimon.
+There is relatively consistent negative correlation between rainfall differences and grid cell height during the high flow events, with a tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes (**Figure 13**).
+Although this trend does not hold in the high altitude Plynlimon catchment.
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
 
@@ -177,12 +178,6 @@ _**Figure 12** Comparison between minimum distance to gauge and gridded data dif
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_height.png" width="700">
 
 _**Figure 13** Comparison between grid cell height and gridded data differences in the grid cells of each of the three Upper Severn catchments. In each case, a dated event is the mean of 10 to 0 days before it._
-
-### Interpretation
-
-- Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
-- There is a negative correlation between rainfall differences and grid cell height during the high flow events (**Figure 13**).
-- There is some seperation between grid cells in Abermule and Plynlimon.
 
 ### Code for these figures
 
@@ -194,6 +189,10 @@ Notably, when the the minimum distance to the nearest gauge jumped with the remo
 
 The rain gauge at Carreg Wen was not included in either the CEH-GEAR or HadUK-Grid.  
 <img src="figures/upper_severn_floods/uppersevern_flood_event_mean_difference.png" width="700">
+
+_**Figure X** Location of the daily Carreg Wen gauge._
+
+<img src="figures/upper_severn_floods/uppersevern_flood_event_mean_mindist.png" width="700">
 
 _**Figure X** Location of the daily Carreg Wen gauge._
 
