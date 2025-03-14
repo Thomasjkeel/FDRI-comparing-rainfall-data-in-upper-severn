@@ -185,37 +185,42 @@ _**Figure 13** Comparison between grid cell height and gridded data differences 
 
 ## 4.3 Carreg Wen case study
 
-The rain gauge at Carreg Wen is situated in the middle of the Plynlimon catchment area, and was included in both the CEH-GEAR and HadUK-Grid until 1988. In this final example, we used in-filled and quality-controlled data from the Carreg Wen gauge extending 1970-2010 (currently unseen by CEH-GEAR or HadUK-Grid).
+The rain gauge at Carreg Wen is situated in the middle of the Plynlimon catchment area, and was included in both the CEH-GEAR and HadUK-Grid until 1988. In this final example, we use infilled quality-controlled data from the Carreg Wen gauge extending 1970-2010 (currently unseen by CEH-GEAR or HadUK-Grid).
 
-When the the minimum distance to the nearest gauge jumped with the removal of a gauge nearby (_third panel_ of **Figure 10**)
+The pattern of dataset bias during high flow events is not uniform through time (**Figure 14**).
+In the Upper Severn CEH-GEAR bias was particularly strong towards Plynlimon in the period 1984-1988 (when Carreg Gauge was active), and then between 2000-2002 (after the final rain gauge was removed from the Plynlimon Flume catchment; i.e. see _third panel_ of **Figure 10**).
+
+See a version of **Figure 14** for minimum distances to gauges during these time periods [here](figures/upper_severn_floods/uppersevern_flood_event_mean_mindist.png).
 
 <img src="figures/upper_severn_floods/uppersevern_flood_event_mean_difference.png" width="700">
 
-_**Figure X** Location of the daily Carreg Wen gauge._
-
-<img src="figures/upper_severn_floods/uppersevern_flood_event_mean_mindist.png" width="700">
-
-_**Figure X** Location of the daily Carreg Wen gauge._
+_**Figure 14** Rainfall differences during high flow events in four time periods: 1984-1988 (when the old Carreg wen rain gauge was used); 1990-1996 (whilst 1 rain gauge remained in Plynlimon Flume); 2000-2002 (a period of higher dataset uncertainty in Plynlimon) & 2007-2020 (a period of low dataset uncertainty in Plynlimon)_
 
 ### 4.3.1 Comparing new Carreg Wen gauge to nearby gridded data
 
+CEH-GEAR and HadUK-Grid rainfall estimates tend to be closer to each other than the new rain gauge (**Figure 15**).  
+For the six high flow event examined in **Figure 15**, rainfall tends to be highest 2-4 days before a Severn-wide high flow event.
+
+When viewing all 22 high flow event discovered between 1984-2010
+(**Figure 16**), there are clear periods where the gridded products are wetter or drier including a period between 1994-2000 where rainfall during high flow events were significantly overestimated by HadUK-Grid and CEH-GEAR. In terms of similarities to either gridded product, there is no consistent pattern, with HadUK-Grid being more closely allign in some periods, and CEH-GEAR in others (also see this [figure](figures/carreg_wen_case_study/annual_mean_rainfall_comparison_new_gauge.png))
+
 <img src="figures/carreg_wen_case_study/flood_comparison_line.png" width="700">
 
-_**Figure X** Compare nearby grid cells with new Carreg Wen rain gauge.'nearby' represents the eight surrounding grid cells_
+_**Figure 15** Comparison between rain estimates from the new Carreg Wen gauge and the nearby and closest CEH-GEAR and HadUK-Grid 1km cells. The lines represent the leading 10 days before a high flow event and each marker in the line represents a day._
 
 <img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference.png" width="700">
 
-_**Figure X** rainfall differences between gridded datasets and the unseen Carreg Wen gauge_
+_**Figure 16** Comparison between gridded datasets and the unseen Carreg Wen gauge. Rainfall differences are relative to the gauged 10 day sum rainfall of the new Carreg Wen gauge. Blue values represent wetter than Carreg Wen, and red values represent drier._
 
 ### 4.3.2 Comparing new Carreg Wen gauge to other nearby gauges which are used in CEH-GEAR
 
-<img src="figures/carreg_wen_case_study/flood_comparison_line_nearbygauges_w_grid.png" width="700">
-
-_**Figure X** View rainfall in nearby gauges_
+For most of relatively wetter high flow events, the new gauge at Carreg Wen produces higher rainfall estimates than in all the other rain gauges within 10 km (**Figure 17**).
+Despite being the closest gauge to Carreg Wen, gauge 420655 still is regularly at least 10% different.
+Equally, those gauges further way tend to even more different.
 
 <img src="figures/carreg_wen_case_study/flood_comparison_heatmap_percentage_difference_rain_gauge_version.png" width="700">
 
-_**Figure X** rainfall differences between the unseen Carreg Wen gauge and nearby gauges that are used in the CEH-GEAR_
+_**Figure 17** Comparison between the unseen Carreg Wen gauge and nearby gauges that are used in the CEH-GEAR. Rainfall differences are relative to the gauged 10 day sum rainfall of the new Carreg Wen gauge. Blue values represent wetter than Carreg Wen, and red values represent drier._
 
 _more figures available under `figures/carreg_wen_case_study`_
 
@@ -228,6 +233,8 @@ _more figures available under `figures/carreg_wen_case_study`_
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/Carreg_wen_case_study.ipynb)\_
 
 # 5. Discussion
+
+TODO
 
 - uncertainty in the Pynlimon region about how much rainfall falls during high-flow events (also see project examining influence of height on rainfall estimation in gridded rainfall products [here](#https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods))
 
