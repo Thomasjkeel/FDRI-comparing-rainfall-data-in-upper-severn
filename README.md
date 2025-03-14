@@ -133,7 +133,7 @@ _**Figure 8** Rainfall data difference vs height of grid cell (mean of 1 Jan 197
 
 _**Figure 9** Rainfall data difference vs minimum distance to gauge from CEH-GEAR (mean of 1 Jan 1970 to 31 Dec 2022)._
 
-#### 4.1.2 Is there temporal relationship between gridded data differences and the location of the underlying rain gauges?
+#### 4.1.2 Is there temporal relationship between gridded data differences and the distances to gauge or altitude?
 
 There has been a gradual reduction in the number of gauges in the Upper Severn (_fourth panel_ of **Figure 10**) and this has coincided with a slight jump in the variability of the difference between CEH-GEAR & HadUK-Grid in Plynlimon and to a lesser extent Abermule (_second panel_ of **Figure 10**). No pattern or change in min dist to gauge was shown in Dolwen.
 
@@ -149,26 +149,37 @@ _**Figure 10** Comparison of dataset differences and inputted rain gauge informa
 
 # 4.2 Dataset uncertainty during Severn high flow events
 
-We examine 6 major Severn-wide high flow events between 2000-2008. High flow events are defined as [gauged daily flow](https://nrfa.ceh.ac.uk/data/about-data/daily-flow-data/gauged-daily-flow-data) above the 95th percentile in each of the [Bewdley](https://nrfa.ceh.ac.uk/data/station/info/54001), [Buildwas](https://nrfa.ceh.ac.uk/data/station/info/54095) and [Montford](https://nrfa.ceh.ac.uk/data/station/info/54005) catchments. By using three catchments, we hope to caputre events that co-occured across the Severn.
+We examine 6 major Severn-wide high flow events between 2000-2008. High flow events are defined as [gauged daily flow](https://nrfa.ceh.ac.uk/data/about-data/daily-flow-data/gauged-daily-flow-data) above the 95th percentile in each of the [Bewdley](https://nrfa.ceh.ac.uk/data/station/info/54001), [Buildwas](https://nrfa.ceh.ac.uk/data/station/info/54095) and [Montford](https://nrfa.ceh.ac.uk/data/station/info/54005) catchments. By focusing on three catchments, we hope to caputre events that co-occured across the Severn.
 
-There is no uniform bias leading up to
-(**Figure 11**)
+There is no clear spatial pattern of dataset uncertainty about rainfall leading up to high flow events in the Upper Severn (**Figure 11**).
+However, there is slightly more uncertainty towards Plynlimon Flume and high altitude regions (**Figure 4**).
+
+For a further six high flow events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_differences_6latest.png). And to see a map of minimum distances to gauge during these events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_differences_mindist.png).
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
 _**Figure 11** High flow events over the Upper Severn. In each case, a dated event is the mean of 10 to 0 days before it._
 
+#### 4.2.1 Is there relationship between gridded data differences for these high flow events and the distances to gauge or altitude?
+
+There is no consistent pattern between the difference in rainfall in CEH-GEAR vs HadUK-Grid and minimum distance to gauge (**Figure 12**) in any of the three catchments.
+
+Similarly, there is not much pattern between rainfall differences and grid cell height (**Figure 13**).
+The one exception is high grid cell height is found to be associated with more HadUK-Grid bias across the flood events in Abermule only.
+There is some seperation between grid cells in Abermule and Plynlimon.
+
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
 
-_**Figure X**_
+_**Figure 12** Comparison between minimum distance to gauge and gridded data differences in the grid cells of each of the three Upper Severn catchments. In each case, a dated event is the mean of 10 to 0 days before it._
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_height.png" width="700">
 
-_**Figure X**_
+_**Figure 13** Comparison between grid cell height and gridded data differences in the grid cells of each of the three Upper Severn catchments. In each case, a dated event is the mean of 10 to 0 days before it._
 
 ### Interpretation
 
 - Clearly there is a large amount of bias within the Plynlimon catchment, next we explore a gauge that was unused in the HadUK-Grid and CEH-GEAR datasets at Carreg-Wen, Plynlimon
+- There is some seperation between grid cells in Abermule and Plynlimon.
 
 ### Code for these figures
 
