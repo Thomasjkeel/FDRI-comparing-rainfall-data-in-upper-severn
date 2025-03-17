@@ -158,7 +158,7 @@ We examine 6 major Severn-wide high flow events between 2000-2008. High flow eve
 There is no clear spatial pattern of dataset uncertainty about rainfall leading up to high flow events in the Upper Severn (**Figure 11**).
 However, there is slightly more uncertainty towards high altitude regions (**Figure 4**), with no clear trend in CEH or HadUK bias.
 
-For a further six high flow events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_differences_6latest.png). And to see a map of minimum distances to gauge during these events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_differences_mindist.png).
+For a further six high flow events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_differences_6other.png). And to see a map of minimum distances to gauge during these events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_mindist.png).
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_differences.png" width="700">
 
