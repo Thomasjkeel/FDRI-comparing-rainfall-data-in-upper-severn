@@ -11,11 +11,20 @@ Project comparing rainfall estimates in the Upper Severn using data from rain ga
 
 ## **Headline Findings**
 
-TODO
+**CEH-GEAR vs HadUK-Grid:**
 
-- There is a spatial signature to the difference between CEH-GEAR and HadUK-Grid (**Figures X, X** & **X**)
-- The relationship between changes to the density of rain gauges to differences between gridded data products is uncertain, but there has been a decrease in the number of daily rain gauges in the Upper Severn (**Figure 2**), alongside a relationship between X and X (**Figures X, X** & **X**).
-- Tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes during high flow events (**Figure 13**).
+- There is a spatial pattern to the difference between rainfall estimates from the CEH-GEAR and HadUK-Grid (**Figures 5 & 7**).
+- There is CEH-GEAR bias towards source of Severn at Plynlimon, but general HadUK-Grid bias at higher altitudes (**Figures 6 & 8**).
+- Distance to the nearest rain gauge less important for dataset differences than height at grid cell (**Figures 9 & 12**).
+
+**Changes in the rain gauges network:**
+
+- The relationship between the density of the rain gauges network and dataset differences is uncertain. There has been a decrease in the number of daily rain gauges in the Upper Severn, and this has lead to slight increase in the variability (stdev) of rainfall bias between CEH-GEAR and HadUK-Grid in catchments where and when there has been a decrease in rain gauge coverage (**Figures 2 & 10**).
+
+**Rainfall estimates during high-flow events:**
+
+- There is a tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes during high flow events (**Figure 13**).
+- Introducing data from an unused rain gauge highlighted that there are periods where the gridded data products far overestimates rainfall during high flow events (**Figure 16**), and that there is quite a lot of variability between the estimates of rain gauges within a 10 km radius of Carreg wen (**Figure 17**)
 
 ## Index
 
@@ -29,7 +38,7 @@ TODO
   - [4.1. Differences between gridded datasets in Upper Severn](#41-differences-between-gridded-datasets-in-upper-severn)
   - [4.2. Dataset uncertainty during Severn high flow events](#42-dataset-uncertainty-during-severn-high-flow-events)
   - [4.3. Carreg Wen case study](#43-carreg-wen-case-study)
-- [5. Discussion](#5-discussion)
+- [5. Future work](#5-future-work)
 - [6. Technical note, further reading, credits](#6-endnotes)
 
 # 1. Data
@@ -70,6 +79,7 @@ _**Figure 2.** Number of daily rain gauges around Abermule. Red circles represen
 
 Rain gauge data is interpolated onto a regular grid differently by the two gridded products (see **Figure 3**). CEH-GEAR uses [Natural Neighbour Interpolation](https://en.wikipedia.org/wiki/Natural-neighbor_interpolation), HadUK-Grid uses [Inverse Distance Weighting](https://en.wikipedia.org/wiki/Inverse_distance_weighting).
 The differences will be subtle, but the choice of spatial interpolation creates uncertainty (see: [DOI:10.5772/65996](https://www.intechopen.com/chapters/52704)).
+Notably, neither of the methods provide an assessment of spatial error that something kriging would provide. Further reading about the case for account for spatial errors during interpolation available [here](https://iri.columbia.edu/~rijaf/CDTUserGuide/html/interpolation_methods.html)
 
 <img src="figures/gridding_example_from_gdal.png" width="300">
 
@@ -139,7 +149,7 @@ _**Figure 9** Rainfall data difference vs minimum distance to gauge from CEH-GEA
 Grid cells within Plynlimon Flume have consistently been associated with a rainfall estimate with a CEH-GEAR bias (_first panel_ of **Figure 10**).
 Notably, when the the minimum distance to the nearest gauge jumped in 1998, the mean and standard deviation of the dataset difference jumped too (_second_ and _third panel_ of **Figure 10**).
 
-There has been a gradual reduction in the number of gauges in the Upper Severn (_fourth panel_ of **Figure 10**) and this has coincided with a slight jump in the variability of the difference between CEH-GEAR & HadUK-Grid in Plynlimon and to a lesser extent Abermule (_second panel_ of **Figure 10**). No pattern or change in min dist to gauge was shown in Dolwen.
+There has been a gradual reduction in the number of gauges in the Upper Severn (_fourth panel_ of **Figure 10**) and this has coincided with a slight jump in the variability of the difference between CEH-GEAR & HadUK-Grid in Plynlimon and to a lesser extent Abermule, especially since 2010 (_second panel_ of **Figure 10**). No pattern or change in min dist to gauge was shown in Dolwen, and this is also the catchment with the lowest relative change in gauges.
 
 A version of this plot without Plynlimon Flume is available [here](figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time_wo_plyn.png)
 
@@ -168,7 +178,7 @@ _**Figure 11** High flow events over the Upper Severn. In each case, a dated eve
 
 There is no consistent pattern between the difference in rainfall in CEH-GEAR vs HadUK-Grid and minimum distance to gauge (**Figure 12**) in any of the three catchments.
 
-There is a tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes as shown by negative correlation (**Figure 13**).
+However, there is a tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes as shown by negative correlation (**Figure 13**).
 Although this trend does not hold in the high altitude Plynlimon catchment.
 
 <img src="figures/upper_severn_floods/uppersevern_flood_events_scatter_mindist.png" width="700">
@@ -224,19 +234,16 @@ _**Figure 17** Comparison between the unseen Carreg Wen gauge and nearby gauges 
 
 _more figures available under `figures/carreg_wen_case_study`_
 
-### Interpretation
-
-- Carreg Wen represented a blind spot for rainfall estimates in the Upper Severn, which was biased towards CEH-GEAR
-
 ### Code for these figures
 
 - Information about how the above plots were produced is provided in [notebooks/explore_differences_in_gridded_datasets.ipynb](./notebooks/Carreg_wen_case_study.ipynb)\_
 
-# 5. Discussion
+# 5. Future work
 
-TODO
-
-- uncertainty in the Pynlimon region about how much rainfall falls during high-flow events (also see project examining influence of height on rainfall estimation in gridded rainfall products [here](#https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods))
+- There are time periods when bias leans towards either CEH-GEAR or HadUK-Grid in the Upper Severn. Why is this?
+- Are there certain rain gauges that lead to greater changes in the difference between datasets when included or not? And are there certain locations more important to monitor for high-flow events?
+- How do differences in spatial interpolation methods affect the rainfall estimates? Would kriging provide a better assessment of the uncertainties?
+- There is an uncertainty around how much rainfall falls above certain heights above rain gauges, especially around Plynlimon and the source of the Severn during high-flow events . See project examining influence of height on rainfall estimation in gridded rainfall products [here](#https://github.com/Thomasjkeel/FDRI-catchment-contribution-to-floods).
 
 # 6. Endnotes
 
