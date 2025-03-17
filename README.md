@@ -19,7 +19,7 @@ _CEH-GEAR vs HadUK-Grid:_
 
 _Changes in the rain gauges network:_
 
-- The relationship between the density of the rain gauges network and dataset differences is uncertain. There has been a decrease in the number of daily rain gauges in the Upper Severn, and this has lead to slight increase in the variability (stdev) of rainfall bias between CEH-GEAR and HadUK-Grid in catchments where and when there has been a decrease in rain gauge coverage (**Figures 2 & 10**).
+- The relationship between the density of the rain gauges network and dataset differences is uncertain. There has been a decrease in the number of daily rain gauges in the Upper Severn, and this has lead to slight increase in the variability (stdev) of rainfall bias between CEH-GEAR and HadUK-Grid in catchments where and when there are decreases in rain gauges (**Figures 2 & 10**).
 
 _Rainfall estimates during high-flow events:_
 
