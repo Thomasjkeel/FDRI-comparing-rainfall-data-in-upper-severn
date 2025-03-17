@@ -82,7 +82,7 @@ The reduction in density of the rain gauge network in the Upper Severn (shown in
 
 Both datasets uses differing QC procedures, and may included different rain gauges at different time steps.
 The QC methodologies are noted in the following sections of the data paper:
-CEH-GEAR (Section 4 of [Keller et al. 2015](https://doi.org/10.5194/essd-7-143-2015)) & HadUK-Grid (Section of [Hollis et al. 2019](https://rmets.onlinelibrary.wiley.com/doi/10.1002/gdj3.78))
+CEH-GEAR (Section 4 of [Keller et al. 2015](https://doi.org/10.5194/essd-7-143-2015)) & HadUK-Grid (Section 2.2 of [Hollis et al. 2019](https://rmets.onlinelibrary.wiley.com/doi/10.1002/gdj3.78))
 
 🌲 _I am happy to discuss the QC protocols further, and a more robust rain QC protocol for hourly data is provided in [Lewis et al. 2021](https://doi.org/10.1016/j.envsoft.2021.105169)_ 🌲
 
@@ -110,7 +110,7 @@ The Abermule catchment encompasses the other two, and in this wider catchment th
 
 _**Figure 5** Histogram of differences between CEH-Gear and HadUK in Upper Severn. Histogram bins are every 5 mm difference._
 
-There is also a clear spatial pattern of bias shown in the upper severn (**Figure 6**), and this pattern is not seasonally dependent (**Figure 7**).  
+There is a clear spatial pattern of bias shown in the upper severn (**Figure 6**), and this pattern is not seasonally dependent (**Figure 7**). Most of the CEH bias is towards Plynlimon Flume where towards the highest reaches of the Severn river.  
 <img src="figures/ceh_vs_haduk_differences/catchment_mask_vs_boundary.png" width="700">
 
 _**Figure 6** Mean dataset difference in the Upper Severn using a region mask._
@@ -145,7 +145,7 @@ A version of this plot without Plynlimon Flume is available [here](figures/ceh_v
 
 <img src="figures/ceh_vs_haduk_differences/ceh_vs_haduk_thru_time.png" width="700">
 
-_**Figure 10** Comparison of dataset differences and inputted rain gauge information across the study period._
+_**Figure 10** Comparison of dataset differences and inputted rain gauge information across the study period. Data is annual mean._
 
 ### Code for these figures
 
@@ -156,7 +156,7 @@ _**Figure 10** Comparison of dataset differences and inputted rain gauge informa
 We examine 6 major Severn-wide high flow events between 2000-2008. High flow events are defined as [gauged daily flow](https://nrfa.ceh.ac.uk/data/about-data/daily-flow-data/gauged-daily-flow-data) above the 95th percentile in each of the [Bewdley](https://nrfa.ceh.ac.uk/data/station/info/54001), [Buildwas](https://nrfa.ceh.ac.uk/data/station/info/54095) and [Montford](https://nrfa.ceh.ac.uk/data/station/info/54005) catchments. By focusing on three catchments, we hope to caputre events that co-occured across the Severn.
 
 There is no clear spatial pattern of dataset uncertainty about rainfall leading up to high flow events in the Upper Severn (**Figure 11**).
-However, there is slightly more uncertainty towards Plynlimon Flume and high altitude regions (**Figure 4**).
+However, there is slightly more uncertainty towards high altitude regions (**Figure 4**), with no clear trend in CEH or HadUK bias.
 
 For a further six high flow events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_differences_6latest.png). And to see a map of minimum distances to gauge during these events see this [figure](figures/upper_severn_floods/uppersevern_flood_events_differences_mindist.png).
 
