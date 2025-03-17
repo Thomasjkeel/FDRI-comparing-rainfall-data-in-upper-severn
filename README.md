@@ -24,7 +24,7 @@ _Changes in the rain gauges network:_
 _Rainfall estimates during high-flow events:_
 
 - There is a tendancy for HadUK-Grid bias in the rainfall estimate at higher altitudes during high flow events (**Figure 13**).
-- Introducing data from an unused rain gauge highlighted that there are periods where the gridded data products far overestimates rainfall during high flow events (**Figure 16**), and that there is quite a lot of variability between the estimates of rain gauges within a 10 km radius of Carreg wen (**Figure 17**)
+- Introducing data from an unused rain gauge highlighted that there are periods where the gridded data products far overestimates rainfall during high flow events (**Figure 16**), and that there is quite a lot of variability between the estimates of the new gauge and the rain gauges within a 10 km radius of the new gauge (**Figure 17**)
 
 ## Index
 
